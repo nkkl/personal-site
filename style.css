@@ -1,0 +1,48 @@
+html {}
+
+body {
+	font-family: "nimbus-sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: "nimbus-sans-extended";
+}
+
+#header {
+	width: 850px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header h1 {
+	font-size: 60px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#header .tags {
+	margin: auto 1em 0;
+	display: inline-block;
+	line-height: 100%;
+}
+
+#subheader {
+	margin-top: -10px;
+	height: 100%;
+	width: 100%;
+	background: black;
+	text-align: right;
+	padding: 0;
+}
+
+#subheader > div {
+	display: inline-block;
+	color: rgb(200,200,200);
+	padding: 0 2em;
+	margin: 0 0 0 -.25em;
+}
+
+#subheader > div:hover {
+	color: white;
+	background: rgb(50,50,50);
+}
