@@ -76,7 +76,9 @@ img {
 
 #projects-page {}
 
-#contact {}
+#contact {
+	margin-top: -1.5em;
+}
 
 /** CONTENT BODY **/
 #content {
