@@ -15,6 +15,7 @@ a, a:link, a:active, a:hover, a:visited {
 body {
 	font-family: "nimbus-sans", sans-serif;
 	font-weight: 300;
+	background: url("img/cream_dust.png");
 }
 
 h1, h2, h3, h4 {
@@ -22,114 +23,142 @@ h1, h2, h3, h4 {
 	font-weight: 300;
 }
 
-/** HEADER **/
-#header {}
+/* standard screen size and up */
+@media (min-width: 980px) {
+	/** HEADER **/
+	#header {}
 
-#header h1 {
-	font-size: 300%;
-}
+	#header h1 {
+		font-size: 300%;
+	}
 
-#header .linktags {}
+	#header .linktags {}
 
-#header .nav {}
+	#header .nav {}
 
-/** BIOGRAPHY **/
-#biography {
-	padding: 1em;
-	color: #ddd;
-	background: #222;
-}
+	/** BIOGRAPHY **/
+	#biography {
+		padding: 1em;
+		color: #ddd;
+		background: #333;
+		background: rgba(0,0,0,.8);
+	}
 
-#biography p, #biography ul {
-	margin-bottom: 1em;
-}
+	#biography p, #biography ul {
+		margin-bottom: 1em;
+	}
 
-#biography h2 {
-	color: white;
-}
+	#biography h2 {
+		color: white;
+	}
 
-#biography .img {}
+	#biography .img {}
 
-#biography .content {}
+	#biography .content {}
 
-#biography li {
-	margin-left: 1.5em;
-}
+	#biography li {
+		margin-left: 1.5em;
+	}
 
-#biography .button {
-	display: inline-block;
-	width: 145px;
-	padding: 0.5em 0;
-	text-align: center;
-	margin: 1px;
-}
+	#biography .button {
+		display: inline-block;
+		width: 145px;
+		padding: 0.5em 0;
+		text-align: center;
+		margin: 1px;
+	}
 
-a.button {
-	background: rgb(15,15,15);
-	color: rgb(220,220,220);
-}
+	a.button {
+		background: rgb(15,15,15);
+		color: rgb(220,220,220);
+	}
 
-a.button:hover {
-	background: black;
-	color: white;
-}
+	a.button:hover {
+		background: black;
+		color: white;
+	}
 
-/** PROJECTS **/
-#projects {}
+	/** PROJECTS **/
+	#projects {}
 
-#projects p {
-	margin-top: 1em;
-}
+	#projects p {
+		margin-top: 1em;
+	}
 
-#projects .project {
-	float: left;
-	border: 1px solid black;
-	margin: 0 0 25px 25px;
-	width: 350px;
-	height: 350px;
-	position: relative;
-}
+	#projects .project {
+		float: left;
+		margin: 0 0 25px 25px;
+		width: 350px;
+		height: 350px;
+		position: relative;
+	}
 
-#projects .content {
-	position: absolute;
-	bottom: 0;
-	padding: 5px;
-	max-width: 340px;
-	width: 100%;
-	background: #222;
-	color: #ddd;
-}
+	#projects .content {
+		position: absolute;
+		bottom: 0;
+		padding: 5px;
+		max-width: 340px;
+		width: 100%;
+		background: #333;
+		background: rgba(0,0,0,.8);
+		color: #ddd;
+	}
 
-#projects .project h3 {
-	font-size: 200%;
-	color: white;
-}
+	#projects .project h3 {
+		font-size: 200%;
+		color: white;
+	}
 
-#projects .project .content h4 {
-	display: none;
-}
+	#projects .project .content h4 {
+		display: none;
+	}
 
-#projects .project .content p {
-	display: none;
-}
+	#projects .project .content p {
+		display: none;
+	}
 
-#projects .project:hover .content h4 {
-	display: inline-block;
-}
+	#projects .project:hover .content h4 {
+		display: inline-block;
+	}
 
-#projects .project:hover .content p {
-	display: inline-block;
+	#projects .project:hover .content p {
+		display: inline-block;
+	}
+
+	#arrived {
+		background-image: url("img/arrived_350.jpg");
+	}
+
+	#gator {
+		background-image: url("img/gator_350.jpg");
+	}
+
+	#hfid {
+		background-image: url("img/hfid_350.png");
+	}
+
+	#mamalode {
+		background-image: url("img/mamalode_350.jpg");
+	}
+
+	#gatehopper {
+		background-image: url("img/gatehopper_350.png");
+	}
+
+	#ovpc {
+		background-image: url("img/ovpc_350.png");
+	}
 }
 
 /* large screen version */
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 	/** HEADER **/
 	#header {}
 
 	#header h1 {}
 
 	#header .linktags {
-		position: fixed;
+		position: absolute;
 		right: 1em;
 		top: 1em;
 	}
@@ -153,8 +182,42 @@ a.button:hover {
 		margin-left: 350px;
 	}
 
+	#projects .project {
+		margin: 0 25px 50px 25px;
+		width: 400px;
+		height: 400px;
+	}
+
+	#projects .content {
+		max-width: 390px;
+	}
+
 	#projects .desc {
 		display: none;
+	}
+
+	#arrived {
+		background-image: url("img/arrived_400.jpg");
+	}
+
+	#gator {
+		background-image: url("img/gator_400.jpg");
+	}
+
+	#hfid {
+		background-image: url("img/hfid_400.png");
+	}
+
+	#mamalode {
+		background-image: url("img/mamalode_400.jpg");
+	}
+
+	#gatehopper {
+		background-image: url("img/gatehopper_400.png");
+	}
+
+	#ovpc {
+		background-image: url("img/ovpc_400.png");
 	}
 }
 
@@ -182,10 +245,21 @@ a.button:hover {
 	#projects {}
 
 	#projects .project {
-		border: 1px solid black;
 		width: 400px;
 		height: 400px;
 	}
+
+	#arrived {}
+
+	#gator {}
+
+	#hfid {}
+
+	#mamalode {}
+
+	#gatehopper {}
+
+	#ovpc {}
 }
 
 /* phone version */
@@ -212,7 +286,6 @@ a.button:hover {
 	#projects {}
 
 	#projects .project {
-		border: 1px solid black;
 		width: 400px;
 		height: 400px;
 	}
