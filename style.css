@@ -1,5 +1,17 @@
-html {}
+/* CSS refresh */
+html, * {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
 
+a, a:link, a:active, a:hover, a:visited {
+	text-decoration: none;
+	color: dodgerBlue;
+}
+
+/* custom font settings */
 body {
 	font-family: "nimbus-sans", sans-serif;
 	font-weight: 300;
@@ -10,153 +22,198 @@ h1, h2, h3, h4 {
 	font-weight: 300;
 }
 
-img {
-	border: none;
-}
-
 /** HEADER **/
-#header {
-	width: 850px;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-}
+#header {}
 
 #header h1 {
-	font-size: 60px;
-	display: inline-block;
-	margin: 0 auto;
+	font-size: 300%;
 }
 
-#header .linktags {
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin-bottom: 0;
-	display: inline-block;
-	line-height: 100%;
+#header .linktags {}
+
+#header .nav {}
+
+/** BIOGRAPHY **/
+#biography {
+	padding: 1em;
+	color: #ddd;
+	background: #222;
 }
 
-#subheader {
-	margin-top: -10px;
-	height: 100%;
-	width: 100%;
-	background: black;
-	text-align: right;
-	padding: 0;
-}
-
-#subheader > div {
-	text-align: center;
-	display: inline-block;
-	color: rgb(200,200,200);
-	width: 100px;
-	padding: 1px 0;
-	margin: 0 0 0 -.25em;
-}
-
-#subheader > div:hover {
-	color: white;
-	background: rgb(50,50,50);
-}
-
-#subheader a {
-	text-decoration: inherit;
-	color: inherit;
-}
-
-/** PAGES **/
-#content > div {
-	overflow: hidden;
+#biography p, #biography ul {
 	margin-bottom: 1em;
 }
 
-#intro {}
-
-#projects-page {}
-
-#contact {
-	margin-top: -1.5em;
+#biography h2 {
+	color: white;
 }
 
-/** CONTENT BODY **/
-#content {
-	width: 850px;
-	margin: 1em auto 2em auto;
-	padding: 0;
-	overflow: hidden;
+#biography .img {}
+
+#biography .content {}
+
+#biography li {
+	margin-left: 1.5em;
 }
 
-.col {
+#biography .button {
+	display: inline-block;
+	width: 145px;
+	padding: 0.5em 0;
+	text-align: center;
+	margin: 1px;
+}
+
+a.button {
+	background: rgb(15,15,15);
+	color: rgb(220,220,220);
+}
+
+a.button:hover {
+	background: black;
+	color: white;
+}
+
+/** PROJECTS **/
+#projects {}
+
+#projects p {
+	margin-top: 1em;
+}
+
+#projects .project {
 	float: left;
-	width: 250px;
-	margin-right: 50px;
+	border: 1px solid black;
+	margin: 0 0 25px 25px;
+	width: 350px;
+	height: 350px;
+	position: relative;
 }
 
-.doublecol {
-	float: left;
-	width: 550px;
-	padding: 0;
-}
-
-.half-col {
-	float: left;
-	width: 400px;
-	margin-right: 50px;
-}
-
-.nomargin {
-	margin: 0;
-}
-
-#content p {
-	margin-top: 0;
-}
-
-#content h2 {
-	margin: 0 auto;
-}
-
-#content a {
-	text-decoration: none;
-}
-
-#content a:hover {
-	text-decoration: underline;
-}
-
-/* project boxes */
-.project {
-	overflow: hidden;
+#projects .content {
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+	max-width: 340px;
 	width: 100%;
-	height: 240px;
+	background: #222;
+	color: #ddd;
 }
 
-.project img {
-	float: left;
-	margin-right: 10px;
-	margin-top: 3px;
+#projects .project h3 {
+	font-size: 200%;
+	color: white;
 }
 
-.project h3 {
-	margin: .5em 0 0 0;
-	padding-top: 0;
+#projects .project .content h4 {
+	display: none;
 }
 
-.project h3 a {
-	color: inherit;
+#projects .project .content p {
+	display: none;
 }
 
-.project h4 {
-	margin: 0;
-	font-weight: normal;
-	color: rgb(150,150,150);
+#projects .project:hover .content h4 {
+	display: inline-block;
 }
 
-.project p {
-	margin-top: 0;
-	padding: 0;
-	font-size: 12pt;
-	line-height: 14pt;
+#projects .project:hover .content p {
+	display: inline-block;
+}
+
+/* large screen version */
+@media (min-width: 1200px) {
+	/** HEADER **/
+	#header {}
+
+	#header h1 {}
+
+	#header .linktags {
+		position: fixed;
+		right: 1em;
+		top: 1em;
+	}
+
+	#header .nav {
+		display: none;
+	}
+
+	/** BIOGRAPHY **/
+	#biography {		
+		max-width: 300px;
+		float: left;
+	}
+
+	#biography .img {}
+
+	#biography .content {}
+
+	/** PROJECTS **/
+	#projects {
+		margin-left: 350px;
+	}
+
+	#projects .desc {
+		display: none;
+	}
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 979px) {
+	/** HEADER **/
+	#header {}
+
+	#header h1 {}
+
+	#header .linktags {}
+
+	#header .nav {}
+
+	/** BIOGRAPHY **/
+	#biography {}
+
+	#biography .img {}
+
+	#biography .content {}
+
+	#biography .button {}
+
+	/** PROJECTS **/
+	#projects {}
+
+	#projects .project {
+		border: 1px solid black;
+		width: 400px;
+		height: 400px;
+	}
+}
+
+/* phone version */
+@media (max-width: 767px) {
+	/** HEADER **/
+	#header {}
+
+	#header h1 {}
+
+	#header .linktags {}
+
+	#header .nav {}
+
+	/** BIOGRAPHY **/
+	#biography {}
+
+	#biography .img {}
+
+	#biography .content {}
+
+	#biography .button {}
+
+	/** PROJECTS **/
+	#projects {}
+
+	#projects .project {
+		border: 1px solid black;
+		width: 400px;
+		height: 400px;
+	}
 }
