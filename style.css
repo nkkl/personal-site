@@ -1,9 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
+
 /* CSS refresh */
 html, * {
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	margin: 0;
 	padding: 0;
 	border: none;
+}
+
+strong {
+	font-family: 'Open Sans';
+	font-weight: 600;
 }
 
 a, a:link, a:active, a:hover, a:visited {
@@ -13,18 +21,130 @@ a, a:link, a:active, a:hover, a:visited {
 
 /* custom font settings */
 body {
-	font-family: "nimbus-sans", sans-serif;
-	font-weight: 300;
 	background: url("img/cream_dust.png");
 }
 
-h1, h2, h3, h4 {
-	font-family: "nimbus-sans-extended", sans-serif;
+h1, h2, h3 {
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+}
+
+h4 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.button {
+	background: black;
+	display: inline-block;
+	text-align: center;
+}
+
+a.button {
+	background: rgb(15,15,15);
+	color: rgb(220,220,220);
+}
+
+a.button:hover, a.button:active {
+	background: black;
+	color: white;
+}
+
+/* phone version */
+@media (max-width: 767px) {
+	p, ul {
+		margin-bottom: 1em;
+	}
+
+	.right {
+		float: right;
+	}
+
+	body {
+		margin: 0 1em 1em 1em;
+	}
+
+	/** HEADER **/
+	#header {
+		display: none;
+	}
+
+	#biopic {
+		width: 100%;
+		height: 50px;
+		background-image: url("img/headshot_small.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	/** BIOGRAPHY **/
+	#biography {}
+
+	#biography .img {}
+
+	#biography .content {}
+
+	.button {
+		padding: 5px 10px;
+	}
+
+	/** PROJECTS **/
+	#projects {
+		margin-top: 1em;
+	}
+
+	#projects .project {
+	}
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 979px) {
+	/** HEADER **/
+	#header {}
+
+	#header h1 {}
+
+	#header .linktags {}
+
+	#header .nav {}
+
+	/** BIOGRAPHY **/
+	#biography {}
+
+	#biography .img {}
+
+	#biography .content {}
+
+	#biography .button {}
+
+	/** PROJECTS **/
+	#projects {}
+
+	#projects .project {
+		width: 400px;
+		height: 400px;
+	}
+
+	#arrived {}
+
+	#gator {}
+
+	#hfid {}
+
+	#mamalode {}
+
+	#gatehopper {}
+
+	#ovpc {}
 }
 
 /* standard screen size and up */
 @media (min-width: 980px) {
+	.mobile {
+		display: none;
+	}
+
 	/** HEADER **/
 	#header {}
 
@@ -61,10 +181,8 @@ h1, h2, h3, h4 {
 	}
 
 	#biography .button {
-		display: inline-block;
 		width: 145px;
 		padding: 0.5em 0;
-		text-align: center;
 		margin: 1px;
 	}
 
@@ -218,75 +336,5 @@ h1, h2, h3, h4 {
 
 	#ovpc {
 		background-image: url("img/ovpc_400.png");
-	}
-}
-
-/* tablet version */
-@media (min-width: 768px) and (max-width: 979px) {
-	/** HEADER **/
-	#header {}
-
-	#header h1 {}
-
-	#header .linktags {}
-
-	#header .nav {}
-
-	/** BIOGRAPHY **/
-	#biography {}
-
-	#biography .img {}
-
-	#biography .content {}
-
-	#biography .button {}
-
-	/** PROJECTS **/
-	#projects {}
-
-	#projects .project {
-		width: 400px;
-		height: 400px;
-	}
-
-	#arrived {}
-
-	#gator {}
-
-	#hfid {}
-
-	#mamalode {}
-
-	#gatehopper {}
-
-	#ovpc {}
-}
-
-/* phone version */
-@media (max-width: 767px) {
-	/** HEADER **/
-	#header {}
-
-	#header h1 {}
-
-	#header .linktags {}
-
-	#header .nav {}
-
-	/** BIOGRAPHY **/
-	#biography {}
-
-	#biography .img {}
-
-	#biography .content {}
-
-	#biography .button {}
-
-	/** PROJECTS **/
-	#projects {}
-
-	#projects .project {
-		width: 400px;
-		height: 400px;
 	}
 }
