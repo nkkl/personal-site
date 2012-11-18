@@ -133,6 +133,7 @@ a.button:hover, a.button:active {
 		background-image: url("img/cream_dust_dark.png");
 		z-index: 10;
 		margin-right: 1em;
+		padding-top: .5em;
 		position: absolute;
 		bottom: 10px;
 	}
