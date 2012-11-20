@@ -39,7 +39,7 @@ h4 {
 	font-style: italic;
 }
 
-ul {
+ul, ol {
 	margin-left: 1.5em;
 }
 
@@ -60,6 +60,15 @@ a.button {
 a.button:hover, a.button:active {
 	background: black;
 	color: white;
+}
+
+.writing {
+	max-width: 35em;
+	margin: 2em auto;
+}
+
+.writing ul, .writing ol {
+	margin-bottom: 1em;
 }
 
 /* phone version */
