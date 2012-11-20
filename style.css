@@ -86,8 +86,25 @@ a.button:hover, a.button:active {
 		background-position: center;
 	}
 
-	.button {
-		padding: 5px 10px;
+	a.button {
+		width: 90px;
+		display: inline-block;
+		background-image: url("img/download_grey.png");
+		background-repeat: no-repeat;
+		background-position: 15px;
+		padding: .5em 0px .5em 60px;
+		text-align: left;
+		margin-left: .5em;
+	}
+
+	a.button:hover, a.button:active {
+		background-image: url("img/download_white.png");
+		background-repeat: no-repeat;
+		background-position: 15px;
+	}
+
+	.buttons-wrapper {
+		text-align: center;
 	}
 
 	/** PROJECTS **/
@@ -143,9 +160,17 @@ a.button:hover, a.button:active {
 	}
 
 	#biography .button {
-		width: 135px;
-		padding: 0.5em 0;
+		width: 90px;
+		padding: 0.5em 0 0.5em 50px;
 		margin: 1px;
+		background-image: url("img/download_grey.png");
+		background-position: 15px;
+		background-repeat: no-repeat;
+		text-align: left;
+	}
+
+	#biography .button:hover {
+		background-image: url("img/download_white.png");
 	}
 
 	/** PROJECTS **/
@@ -157,8 +182,6 @@ a.button:hover, a.button:active {
 		width: 400px;
 		height: 300px;
 		margin: 1em auto;
-
-		border: 1px solid black;
 	}
 
 	#projects .desc {
@@ -187,7 +210,7 @@ a.button:hover, a.button:active {
 }
 
 /* standard screen size and up */
-@media (min-width: 990px) {
+@media (min-width: 1100px) {
 	.mobile {
 		display: none;
 	}
@@ -196,7 +219,13 @@ a.button:hover, a.button:active {
 	#social {}
 
 	/** PROJECTS **/
-	#projects {}
+	#projects {
+		margin-left: 350px;
+	}
+
+	#projects .desc {
+		margin-left: .25em;
+	}
 
 	#projects p {
 		margin: .5em auto;
@@ -204,7 +233,7 @@ a.button:hover, a.button:active {
 
 	#projects .project {
 		float: left;
-		margin: 15px;
+		margin: .5em;
 		width: 350px;
 		height: 350px;
 		position: relative;
@@ -213,8 +242,9 @@ a.button:hover, a.button:active {
 	#projects .content {
 		position: absolute;
 		bottom: 0;
-		padding: 5px;
-		max-width: 340px;
+		padding: 10px;
+		max-height: 330px;
+		max-width: 330px;
 		width: 100%;
 		overflow: auto;
 		background: #333;
@@ -293,13 +323,15 @@ a.button:hover, a.button:active {
 	}
 
 	#projects .project {
-		margin: 0 20px 50px 25px;
-		width: 400px;
+		margin: 1em;
+		width: 450px;
 		height: 350px;
 	}
 
 	#projects .content {
-		max-width: 390px;
+		max-height: 330px;
+		max-width: 430px;
+		padding: 10px;
 	}
 
 	#arrived {
