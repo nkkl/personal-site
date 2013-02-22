@@ -20,7 +20,6 @@ em, i {
 
 a, a:link, a:active, a:hover, a:visited {
 	text-decoration: none;
-	color: dodgerBlue;
 }
 
 /* custom font settings */
@@ -43,30 +42,6 @@ ul, ol {
 	margin-left: 1.5em;
 }
 
-.button {
-	display: inline-block;
-	text-align: center;
-}
-
-a.button {
-	background: rgb(15,15,15);
-	color: rgb(220,220,220);
-}
-
-a.button:hover, a.button:active {
-	background: black;
-	color: white;
-}
-
-.writing {
-	max-width: 35em;
-	margin: 2em auto;
-}
-
-.writing ul, .writing ol {
-	margin-bottom: 1em;
-}
-
 /* phone version */
 @media (max-width: 767px) {
 	p, ul {
@@ -74,51 +49,41 @@ a.button:hover, a.button:active {
 	}
 
 	body {
-		margin: 0 1em 1em 1em;
 	}
 
-	/** SOCIAL **/
-	#social {
-		display: none;
-	}
-
-	/** BIOGRAPHY **/
-	#biography h1:first-child {
-		display: none;
-	}
-
-	#biopic {
+	/** HEADER **/
+	#header {
+		padding: 0;
+		margin: 0;
+		background: black;
+		color: white;
 		width: 100%;
-		height: 50px;
-		background-image: url("img/headshot_small.jpg");
-		background-repeat: no-repeat;
-		background-position: center;
+		overflow: hidden;
 	}
 
-	a.button {
-		width: 90px;
+	#header a {
 		display: inline-block;
-		background-image: url("img/download_grey.png");
-		background-repeat: no-repeat;
-		background-position: 15px;
-		padding: .5em 0px .5em 60px;
-		text-align: left;
-		margin-left: .5em;
+		padding: 15px 1em;
+		float: left;
+		color: white;
 	}
 
-	a.button:hover, a.button:active {
-		background-image: url("img/download_white.png");
-		background-repeat: no-repeat;
-		background-position: 15px;
+	#header .linktags {
+		display: none;
 	}
 
-	.buttons-wrapper {
-		text-align: center;
+	#header .linktags a {
+		padding: 10px 1em;
+	}
+
+	#header .active {
+		background: orange;
+		color: white;
 	}
 
 	/** PROJECTS **/
 	#projects {
-		margin-top: 1em;
+		margin: 1em;
 	}
 }
 
@@ -128,63 +93,43 @@ a.button:hover, a.button:active {
 		margin-bottom: 1em;
 	}
 
-	/** SOCIAL **/
-	#social {
-		position: absolute;
-		top: 5px;
-		right: 5px;
-	}
-
-	/** BIOGRAPHY **/
-	#biography {
-		width: 300px;
-		padding: 15px;
-		color: #ddd;
-		background-image: url("img/cream_dust_dark.png");
-		position: fixed;
-		top: 0;
-		bottom: 0;
-	}
-
-	#biopic {
-		margin-top: -15px;
-		height: 200px;
+	/** HEADER **/
+	#header {
+		padding: 0;
+		margin: 0;
+		background: black;
+		color: white;
 		width: 100%;
-		background-image: url("img/headshot_small.jpg");
-		background-repeat: no-repeat;
-		background-position: center;
+		overflow: hidden;
 	}
 
-	#biography .content {
-		background-image: url("img/cream_dust_dark.png");
-		z-index: 10;
-		margin-right: 1em;
-		padding-top: .5em;
-		position: absolute;
-		bottom: 10px;
+	#header .active {
+		background: orange;
 	}
 
-	#biography .buttons-wrapper {
-		text-align: center;
+	#header a {
+		display: inline-block;
+		padding: 15px 1em;
+		color: white;
+		float: left;
 	}
 
-	#biography .button {
-		width: 90px;
-		padding: 0.5em 0 0.5em 50px;
-		margin: 1px;
-		background-image: url("img/download_grey.png");
-		background-position: 15px;
-		background-repeat: no-repeat;
-		text-align: left;
+	#header a:hover {
+		background: orange;
 	}
 
-	#biography .button:hover {
-		background-image: url("img/download_white.png");
+	#header .linktags {
+		display: inline-block;
+		float: right;
+	}
+
+	#header .linktags a {
+		padding: 10px .5em;
 	}
 
 	/** PROJECTS **/
 	#projects {
-		margin-left: 330px;
+		margin: auto;
 	}
 
 	#projects .project {
@@ -227,25 +172,31 @@ a.button:hover, a.button:active {
 		display: none;
 	}
 
-	/** SOCIAL **/
-	#social {}
+	/** HEADER **/
+	#header {
+
+	}
 
 	/** PROJECTS **/
 	#projects {
-		margin-left: 350px;
+		border: 1px solid red;
+		display: inline-block;
+		margin: auto;
 	}
 
 	#projects .desc {
+		border: 1px solid blue;
 		margin-left: .25em;
 	}
 
 	#projects p {
 		margin: .5em auto;
+		text-align: left;
 	}
 
 	#projects .project {
-		float: left;
-		margin: .5em;
+		display: inline-block;
+		margin: 1em;
 		width: 350px;
 		height: 350px;
 		position: relative;
@@ -336,22 +287,11 @@ a.button:hover, a.button:active {
 
 /* large screen version */
 @media (min-width: 1300px) {
-	/** SOCIAL **/
-	#social {}
-
-	/** BIOGRAPHY **/
-	#biography {		
-		max-width: 300px;
-		/*float: left;*/
-	}
-
-	#biopic {
-		height: 250px;
-	}
+	/** HEADER **/
+	#header {}
 
 	/** PROJECTS **/
 	#projects {
-		margin-left: 350px;
 	}
 
 	#projects .project {
