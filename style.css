@@ -20,11 +20,11 @@ em, i {
 
 a, a:link, a:active, a:hover, a:visited {
 	text-decoration: none;
-	color: red;
+	color: #FF6600;
 }
 
 a:active, a:hover {
-	color: #A00000;
+	color: #EE0000;
 	text-decoration: underline;
 }
 
@@ -93,7 +93,7 @@ ul, ol {
 	}
 
 	#header .active {
-		background: orange;
+		background: #FFAA00;
 		color: white;
 	}
 
@@ -137,7 +137,7 @@ ul, ol {
 	}
 
 	#header .active {
-		background: orange;
+		background: #FFAA00;
 		color: white;
 	}
 
