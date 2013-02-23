@@ -76,6 +76,10 @@ ul, ol {
 		padding: 10px 1em;
 	}
 
+	#header .linktags a:hover {
+		background: none;
+	}
+
 	#header .active {
 		background: orange;
 		color: white;
@@ -100,31 +104,81 @@ ul, ol {
 		background: black;
 		color: white;
 		width: 100%;
-		overflow: hidden;
+		height: 45px;
+		text-align: right;
 	}
 
 	#header .active {
 		background: orange;
+		color: white;
+	}
+
+	#header .nav {
+		margin-left: 100px;
+	}
+
+	#header .nav a {
+		padding: 15px 20px;
 	}
 
 	#header a {
 		display: inline-block;
-		padding: 15px 1em;
-		color: white;
+		text-align: center;
+		color: rgb(220,220,220);
 		float: left;
 	}
 
 	#header a:hover {
-		background: orange;
+		color: white;
 	}
 
 	#header .linktags {
 		display: inline-block;
-		float: right;
+		padding: 0;
+		margin-top: 5px;
+		margin-right: 10px;
 	}
 
 	#header .linktags a {
-		padding: 10px .5em;
+		height: 32px;
+		width: 32px;
+		margin: 0 5px;
+	}
+
+	#twitter {
+		background-image: url("img/twitter.png");
+		background-position: left bottom;
+	}
+
+	#twitter:hover {
+		background-position: right bottom;
+	}
+
+	#facebook {
+		background-image: url("img/facebook.png");
+		background-position: left bottom;
+	}
+
+	#facebook:hover {
+		background-position: right bottom;
+	}
+
+	#linkedin {
+		background-image: url("img/linkedin.png");
+		background-position: left bottom;
+	}
+
+	#linkedin:hover {
+		background-position: right bottom;
+	}
+
+	#github {
+		background-image: url("img/github.png");
+		background-position: left bottom;
+	}
+
+	#github:hover {
+		background-position: right bottom;
 	}
 
 	/** PROJECTS **/
