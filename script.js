@@ -8,10 +8,10 @@ $(document).ready(function() {
 
 var resizer = function() {
 	var pageWidth = $("#header").width();
-	var margin = parseInt( $(".project").css("margin-left") ) + parseInt( $(".project").css("margin-right") );
-	var tileWidth = $(".project").width() + margin + 5;
 
 	if ( pageWidth >= 980 ) {
+		var margin = parseInt( $(".project").css("margin-left") ) + parseInt( $(".project").css("margin-right") );
+		var tileWidth = $(".project").width() + margin + 5;
 		var numTiles = Math.floor(pageWidth / tileWidth);
 
 		$("#projects").width( (numTiles * tileWidth) );
