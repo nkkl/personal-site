@@ -67,6 +67,7 @@ ul, ol {
 		color: white;
 		width: 100%;
 		overflow: hidden;
+		box-shadow: 0 0 2px rgb(50,50,50);
 	}
 
 	#header a {
@@ -146,6 +147,7 @@ ul, ol {
 		width: 100%;
 		height: 45px;
 		text-align: right;
+		box-shadow: 0 0 2px rgb(50,50,50);
 	}
 
 	#header .active {
@@ -329,8 +331,8 @@ ul, ol {
 	}
 
 	/** HEADER **/
-	#header {
-
+	#header .active {
+		box-shadow: 0 0 2px rgb(50,50,50);
 	}
 
 	/** PROJECTS **/
