@@ -104,7 +104,19 @@ ul, ol {
 
 	/** BIO **/
 	#biography {
+		margin: auto;
+		max-width: 500px
+	}
+
+	#biography .wrapper {
 		margin: auto 2em auto 1em;
+	}
+
+	#biography #profile {
+		max-width: 500px;
+		height: 300px;
+		margin: auto;
+		background-image: url("img/cm_wide.jpg");
 	}
 
 	/** FOOTER **/
@@ -280,6 +292,13 @@ ul, ol {
 	}
 
 	/** BIOGRAPHY **/
+	#biography #profile {
+		width: 500px;
+		height: 300px;
+		margin: auto;
+		background-image: url("img/cm_wide.jpg");
+	}
+
 	#biography #description {
 		max-width: 30em;
 		margin: auto;
