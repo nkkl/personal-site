@@ -11,7 +11,8 @@ $(document).ready(function() {
 		"My brother and I memorized the original 151 Pok&eacute;mon together.",
 		"I made One Velociraptor Per Child because OLPC employees told me it was hilarious.",
 		"If you refresh this page you will (probably) see a different fact.",
-		"Dinosaurs and Batman are my best design inspiration."
+		"Dinosaurs and Batman are my best design inspiration.",
+		"I still have my wisdom teeth."
 	];
 	var rand = Math.floor(Math.random() * facts.length);
 	var randomfact = facts[rand];
