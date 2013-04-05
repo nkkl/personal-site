@@ -1,0 +1,31 @@
+.canvaswrapper {
+	width: 100%;
+	text-align: center;
+}
+
+#tenquestions {
+	display: inline;
+}
+
+/*
+@media (max-width: 480px) {
+	#tenquestions {
+		width: 360px;
+		height: 600px;
+	}
+}
+
+@media (min-width: 481px) {
+	#tenquestions {
+		width: 480px;
+		height: 600px;
+	}
+}
+
+@media (min-width: 780px) {
+	#tenquestions {
+		width: 780px;
+		height: 600px;
+	}
+}
+*/
