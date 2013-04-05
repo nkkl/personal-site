@@ -16,47 +16,117 @@ var windowResize = function(canvas, width) {
 	// TODO: redraw all the things!
 }
 
+var titleText = function(canvas) {
+	var width = parseInt(canvas.attr("width")) - 50;
+	console.log(width);
+
+	canvas
+	.drawText({
+		fillStyle: "#000",
+		x: 110, y: 20,
+		font: "24pt Open Sans, sans-serif",
+		align: "left",
+		maxWidth: width,
+		text: "What is all this?"
+	})
+	.drawText({
+		fillStyle: "#000",
+		x: 400, y: 60,
+		font: "12pt Open Sans, sans-serif",
+		align: "left",
+		maxWidth: width,
+		text: "I thought it would be fun to see how well my friends knew me! So, I made a 10 question survey and built this page to visualize the results. Hopefully this data is as entertaining for you as it is for me."
+	})
+}
+
 var heightChart = function(canvas, answers, x, y) {
 	// bucket heights; my height +/- 2 in
-	var buckets = {
-		"under": 0,
-		"60in":  0,
-		"61in":  0,
-		"62in":  0,
-		"63in":  0,
-		"64in":  0,
-		"over":  0
-	};
+	var bucketIndex = [">5'4\"", "5'4\"", "5'3\"", "5'2\"", "5'1\"", "5'0\"", "<5'0\""],
+		buckets = {
+			">5'4\"": 0,
+			"5'4\"":  0,
+			"5'3\"":  0,
+			"5'2\"":  0,
+			"5'1\"":  0,
+			"5'0\"":  0,
+			"<5'0\"":  0
+		};
 
 	// iterate through and bucket heights
 	for (var i=0, max=answers.height.length; i<max; i++) {
 		console.log(answers.height[i]);
 
-		if ( answers.height[i] < 60 ) {
-			buckets["under"] += 1;
-		} else if ( answers.height[i] == 60 ) {
-			buckets["60in"] += 1;
-		} else if ( answers.height[i] == 61 ) {
-			buckets["61in"] += 1;
-		} else if ( answers.height[i] == 62 ) {
-			buckets["62in"] += 1;
-		} else if ( answers.height[i] == 63 ) {
-			buckets["63in"] += 1;
+		if ( answers.height[i] > 64 ) {
+			buckets[ bucketIndex[0] ] += 1;
 		} else if ( answers.height[i] == 64 ) {
-			buckets["64in"] += 1;
+			buckets[ bucketIndex[1] ] += 1;
+		} else if ( answers.height[i] == 63 ) {
+			buckets[ bucketIndex[2] ] += 1;
+		} else if ( answers.height[i] == 62 ) {
+			buckets[ bucketIndex[3] ] += 1;
+		} else if ( answers.height[i] == 61 ) {
+			buckets[ bucketIndex[4] ] += 1;
+		} else if ( answers.height[i] == 60 ) {
+			buckets[ bucketIndex[5] ] += 1;
 		} else {
-			buckets["over"] += 1;
+			buckets[ bucketIndex[6] ] += 1;
 		}
 	}
 
 	console.log(buckets);
 
-	canvas.drawText({
-		fillStyle: "#9cf",
-		x: 150, y: 100,
-		font: "36pt Verdana, sans-serif",
-		text: "Hello"
-	});
+	// add title and text answer
+	canvas
+	.drawText({
+		fillStyle: "#000",
+		x: x+120, y: y+20,
+		font: "24pt Open Sans, sans-serif",
+		align: "left",
+		text: "1. How tall am I?"
+	})
+	.drawText({
+		fillStyle: "#000",
+		x: x+580, y: y+254,
+		font: "18pt Open Sans, sans-serif",
+		align: "left",
+		maxWidth: 350,
+		text: "As it turns out, I'm a whopping 5'2\" tall."
+	})
+
+	// draw buckets
+	var newx = x + 80,
+		newy = y + 50,
+		color = "#666";
+
+	for ( i = 0, max = bucketIndex.length; i<max; i++ ) {
+		// calculate width, scaled by number of people
+		width = Math.round( (buckets[ bucketIndex[i] ] / answers.height.length) * 100) * 10;
+
+		// if it's the right answer, highlight!
+		if ( bucketIndex[i] == "5'2\"" ) {
+			color = "#000"
+		};
+
+		// draw label
+		canvas.drawText({
+			fillStyle: "#000",
+			x: newx, y: newy+25,
+			font: "12pt Open Sans, sans-serif",
+			text: bucketIndex[i]
+		})
+
+		// draw rectangle
+		canvas.drawRect({
+			fillStyle: color,
+			x: newx+30, y: newy,
+			width: width,
+			height: 50,
+			fromCenter: false
+		});
+
+		newy += 60;
+		color = "#666"
+	}
 }
 
 $(document).ready(function() {
@@ -73,6 +143,7 @@ $(document).ready(function() {
 		canvas.attr("height", "600px")
 	} // else default to 360x600 canvas
 
+	// associative array for storing all of our data
 	var answers = {
 		closeness: 	[],
 		height: 	[],
@@ -108,7 +179,8 @@ $(document).ready(function() {
 
 		// TODO: remove this
 		console.log(answers);
-		heightChart(canvas, answers, 0, 0);
+		titleText(canvas)
+		heightChart(canvas, answers, 0, 110);
 	});
 
 	$(window).resize(function() {
