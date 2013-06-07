@@ -129,62 +129,60 @@ var heightChart = function(canvas, answers, x, y) {
 	}
 }
 
-$(document).ready(function() {
-	// correctly size our canvas
-	var canvas = $("#tenquestions");
+// ** Main script! **
+// correctly size our canvas
+var canvas = $("#tenquestions");
 
-	if ( $(window).width() > 780 ) {
-		// for 780+px, use 780x600 canvas
-		canvas.attr("width", "780px");
-		canvas.attr("height", "600px");
-	} else if ( $(window).width() > 480 ) {
-		// for 480+px, use 480x600 canvas
-		canvas.attr("width", "480px");
-		canvas.attr("height", "600px")
-	} // else default to 360x600 canvas
+if ( $(window).width() > 780 ) {
+	// for 780+px, use 780x600 canvas
+	canvas.attr("width", "780px");
+	canvas.attr("height", "600px");
+} else if ( $(window).width() > 480 ) {
+	// for 480+px, use 480x600 canvas
+	canvas.attr("width", "480px");
+	canvas.attr("height", "600px")
+} // else default to 360x600 canvas
 
-	// associative array for storing all of our data
-	var answers = {
-		closeness: 	[],
-		height: 	[],
-		race: 		[],
-		born: 		[],
-		eyes: 		[],
-		handedness: [],
-		orientation:[],
-		state: 		[],
-		phoneOS: 	[],
-		pets: 		[],
-		travel: 	[]
-	};
+// associative array for storing all of our data
+var answers = {
+	closeness: 	[],
+	height: 	[],
+	race: 		[],
+	born: 		[],
+	eyes: 		[],
+	handedness: [],
+	orientation:[],
+	state: 		[],
+	phoneOS: 	[],
+	pets: 		[],
+	travel: 	[]
+};
 
-	// parse JSON and add answers to array
-	$.getJSON("https://spreadsheets.google.com/feeds/list/0ArWU2T0HEMrldDc3YXg2TDYwcmFhTFFER0VnMmYtekE/od6/public/values?alt=json",
-		function(data) {
-			for (i=0;i<data.feed.entry.length;i++) {
-				var entry = data.feed.entry[i];
+// parse JSON and add answers to array
+$.getJSON("https://spreadsheets.google.com/feeds/list/0ArWU2T0HEMrldDc3YXg2TDYwcmFhTFFER0VnMmYtekE/od6/public/values?alt=json",
+	function(data) {
+		for (i=0;i<data.feed.entry.length;i++) {
+			var entry = data.feed.entry[i];
 
-				answers.closeness.push( parseInt(entry["gsx$howwelldoyouknowme"].$t) );
-				answers.height.push( parseInt(entry["gsx$whatismyheight"].$t) );
-				answers.race.push( entry["gsx$whatismyrace"].$t );
-				answers.born.push( entry["gsx$whenwasiborn"].$t );
-				answers.eyes.push( entry["gsx$whatismyeyecolor"].$t );
-				answers.handedness.push( entry["gsx$amirightorlefthanded"].$t );
-				answers.orientation.push( entry["gsx$whatismysexualorientation"].$t );
-				answers.state.push( entry["gsx$whatstateamifrom"].$t );
-				answers.phoneOS.push( entry["gsx$whatphoneosdoiuse"].$t );
-				answers.pets.push( entry["gsx$doilikecatsordogs"].$t );
-				answers.travel.push( parseInt(entry["gsx$howmanycountrieshaveibeento"]).$t );
-			}
+			answers.closeness.push( parseInt(entry["gsx$howwelldoyouknowme"].$t) );
+			answers.height.push( parseInt(entry["gsx$whatismyheight"].$t) );
+			answers.race.push( entry["gsx$whatismyrace"].$t );
+			answers.born.push( entry["gsx$whenwasiborn"].$t );
+			answers.eyes.push( entry["gsx$whatismyeyecolor"].$t );
+			answers.handedness.push( entry["gsx$amirightorlefthanded"].$t );
+			answers.orientation.push( entry["gsx$whatismysexualorientation"].$t );
+			answers.state.push( entry["gsx$whatstateamifrom"].$t );
+			answers.phoneOS.push( entry["gsx$whatphoneosdoiuse"].$t );
+			answers.pets.push( entry["gsx$doilikecatsordogs"].$t );
+			answers.travel.push( parseInt(entry["gsx$howmanycountrieshaveibeento"]).$t );
+		}
 
-		// TODO: remove this
-		console.log(answers);
-		titleText(canvas)
-		heightChart(canvas, answers, 0, 110);
-	});
+	// TODO: remove this
+	console.log(answers);
+	titleText(canvas)
+	heightChart(canvas, answers, 0, 110);
+});
 
-	$(window).resize(function() {
-		windowResize( canvas, $(window).width() );
-	});
-
-})
+$(window).resize(function() {
+	windowResize( canvas, $(window).width() );
+});

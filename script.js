@@ -1,9 +1,7 @@
-$(document).ready(function() {
-	resizer();
+resizer();
 
-	$(window).resize(function() {
-		resizer();
-	});
+$(window).resize(function() {
+	resizer();
 });
 
 var resizer = function() {
