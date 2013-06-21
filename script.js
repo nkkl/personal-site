@@ -1,9 +1,3 @@
-resizer();
-
-$(window).resize(function() {
-	resizer();
-});
-
 var resizer = function() {
 	var pageWidth = $("#header").width();
 
@@ -17,3 +11,9 @@ var resizer = function() {
 		$("#projects").width( pageWidth - 20 );
 	}
 }
+
+resizer();
+
+$(window).resize(function() {
+	resizer();
+});
