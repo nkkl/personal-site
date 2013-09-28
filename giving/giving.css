@@ -1,0 +1,106 @@
+p {
+	font-size: 12pt;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 36pt;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+h2 {
+	font-size: 24pt;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+.header, .footer {
+	background: rgb(25,25,25);
+	color: rgb(240,240,240);
+}
+
+.header p {
+	font-size: 14pt;
+}
+
+.footer {
+	font-size: 10pt;
+	text-align: right;
+	padding: 10px 20px;
+}
+
+.why h2, .monthly h2 {
+	padding: .5em 2em;
+}
+
+.why h2 {
+	background: rgb(200,215,230);
+	color: rgb(25,25,25);
+}
+
+.why {
+	background: rgb(250,250,250);
+	padding: 0 0 .5em 0;
+}
+
+/* phone version */
+@media (max-width: 767px) {
+	.header {
+		padding: 1em;
+		padding-bottom: .25em;
+	}
+
+	.why h2, .monthly h2 {
+		padding: .5em 1em;
+	}
+
+	p {
+		padding: 0 2em;
+		margin: auto auto 1em auto;
+	}
+}
+
+/* tablet version */
+@media (min-width: 768px) {
+	div {
+		padding: .25em 2em;
+	}
+
+	h1 {
+		margin: .25em 0;
+	}
+
+	p {
+		max-width: 40em;
+		margin: auto auto 1em auto;
+	}
+}
+
+/* standard screen size and up */
+@media (min-width: 980px) {
+	div {
+		padding: .25em 0;
+	}
+
+	h1 {
+		margin: .25em 1em;
+	}
+
+	.monthly, .why {
+		max-width: 900px;
+		margin: auto;
+	}
+
+	.header {
+		width: 100%;
+	}
+}
+
+/* large screen version */
+@media (min-width: 1300px) {
+	.header h1 {
+		width: 1200px;
+		margin: .25em 1em;
+	}
+}
