@@ -1,6 +1,6 @@
 /* GENERAL */
 p {
-	font-size: 12pt;
+	font-size: 14pt;
 	line-height: 1.2em;
 }
 
@@ -14,6 +14,11 @@ h2 {
 	font-size: 24pt;
 	line-height: 1em;
 	margin-bottom: .25em;
+}
+
+h3 {
+	font-size: 18pt;
+	line-height: 1em;
 }
 
 .friend img {
@@ -47,6 +52,7 @@ h2 {
 /* MONTH THEMES */
 .monthly h2 {
 	color: gray;
+	margin: .5em inherit;
 }
 
 .oct h2 {
@@ -118,6 +124,10 @@ h2 {
 	.friend h3 {
 		text-align: left;
 		margin: 0 -1em;
+	}
+
+	.friend h4 {
+		text-align: left;
 	}
 
 	.charity {
