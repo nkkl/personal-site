@@ -248,6 +248,11 @@ ul, ol {
 		margin-left: 1em;
 	}
 
+	#giving {
+		background-image: url("img/giving_350.png");
+		background-repeat: no-repeat;
+	}
+
 	#afsea {
 		background-image: url("img/afsea_350.jpg");
 		background-repeat: no-repeat;
@@ -451,6 +456,10 @@ ul, ol {
 		max-height: 330px;
 		max-width: 430px;
 		padding: 10px;
+	}
+
+	#giving {
+		background-image: url("img/giving_450.png");
 	}
 
 	#afsea {
