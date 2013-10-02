@@ -44,7 +44,7 @@ h3 {
 	font-size: 10pt;
 }
 
-.why {
+#why {
 	padding: 1em;
 	color: rgb(25,25,25);
 }
@@ -55,7 +55,11 @@ h3 {
 	margin: .5em inherit;
 }
 
-.oct h2 {
+#why h2 {
+	color: red;
+}
+
+#oct h2 {
 	color: red;
 }
 
@@ -66,7 +70,7 @@ h3 {
 		padding-bottom: .25em;
 	}
 
-	.why, .monthly {
+	.monthly {
 		padding: .5em 1em;
 	}
 
@@ -150,7 +154,7 @@ h3 {
 		margin-left: 4em;
 	}
 
-	.monthly, .why {
+	.monthly {
 		max-width: 900px;
 		margin: auto;
 	}
