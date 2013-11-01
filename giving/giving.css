@@ -1,4 +1,6 @@
 /* GENERAL */
+
+
 p {
 	font-size: 14pt;
 	line-height: 1.2em;
@@ -21,7 +23,7 @@ h3 {
 	line-height: 1em;
 }
 
-.friend img {
+.title img {
 	border-radius: 50px;
 }
 
@@ -51,16 +53,64 @@ h3 {
 
 /* MONTH THEMES */
 .monthly h2 {
-	color: gray;
 	margin: .5em inherit;
+	color: white;
 }
 
-#why h2 {
-	color: red;
+.monthly .title {
+	color: rgb(25,25,25);
 }
 
-#oct h2 {
-	color: red;
+#why .title h2 {
+	color: rgb(0,0,0);
+}
+
+#oct .title h2 {
+	color: rgb(183, 0, 116);
+}
+
+#nov .title h2 {
+	color: rgb(146, 0, 183);
+}
+
+#dec .title {
+	background-color: #5a00b7;
+}
+
+#jan .title {
+	background-color: #005ab7;
+}
+
+#feb .title {
+	background-color: #008eb7;
+}
+
+#mar .title {
+	background-color: #00b779;
+}
+
+#apr .title {
+	background-color: #45b700;
+}
+
+#may .title {
+	background-color: #81b700;
+}
+
+#jun .title {
+	background-color: #da9f00;
+}
+
+#jul .title {
+	background-color: #da8500;
+}
+
+#aug .title {
+	background-color: #da6100;
+}
+
+#sep .title {
+	background-color: #870000;
 }
 
 /* phone version */
@@ -79,18 +129,21 @@ h3 {
 		margin: auto auto 1em auto;
 	}
 
-	.friend {
-		overflow: hidden;
-		margin-bottom: .5em;
+	.title h2 {
+		margin: 0;
 	}
 
-	.friend img, .desc {
+	.title img {
 		float: left;
-		margin: 0 1em;
+		margin-left: 2em;
 	}
 
-	.friend img {
-		margin-left: 2em;
+	.title h3, .title h4 {
+		margin-left: 150px;
+	}
+
+	.title h3 {
+		margin-top: 1em;
 	}
 
 	.charity {
@@ -117,25 +170,25 @@ h3 {
 		overflow: hidden;
 	}
 
-	.friend {
+	.title {
+		overflow: hidden;
+		margin: 1em auto -1.5em auto;
+		padding: 10px;
+	}
+
+	.title img {
 		float: left;
-		padding: 0;
-		margin-bottom: 1em;
-		width: 150px;
-		text-align: center;
+		margin-top: -2em;
 	}
 
-	.friend h3 {
-		text-align: left;
-		margin: 0 -1em;
-	}
-
-	.friend h4 {
+	.title h2, .title h3, .title h4 {
+		margin: 0;
+		margin-left: 125px;
 		text-align: left;
 	}
 
 	.charity {
-		margin-left: 200px;
+		margin-left: 125px;
 	}
 }
 
@@ -161,10 +214,6 @@ h3 {
 
 	.header {
 		width: 100%;
-	}
-
-	.friend h3 {
-		margin: 0;
 	}
 }
 
