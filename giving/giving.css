@@ -85,11 +85,20 @@ h3 {
 
 /*December*/
 #dec a {
-	color: #5a00b7;
+	color: rgb(90, 0, 183);
 }
 
+#dec a:hover, #dec:active {
+	color: rgb(50, 0, 140);
+}
+
+/*January*/
 #jan a {
-	color: #005ab7;
+	color: rgb(0, 90, 183);
+}
+
+#jan a:hover, #jan a:active {
+	color: rgb(0, 40, 140);
 }
 
 #feb a {
