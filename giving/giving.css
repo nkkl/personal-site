@@ -1,7 +1,7 @@
 /* GENERAL */
 
 
-p {
+p, address {
 	font-size: 14pt;
 	line-height: 1.2em;
 }
@@ -54,63 +54,74 @@ h3 {
 /* MONTH THEMES */
 .monthly h2 {
 	margin: .5em inherit;
-	color: white;
+	color: black;
 }
 
 .monthly .title {
 	color: rgb(25,25,25);
 }
 
-#why .title h2 {
-	color: rgb(0,0,0);
+#why {
+	/*rgb(0,0,0);*/
 }
 
-#oct .title h2 {
+/*October*/
+#oct a {
 	color: rgb(183, 0, 116);
 }
 
-#nov .title h2 {
+#oct a:hover, #oct a:active {
+	color: rgb(140, 0, 70);
+}
+
+/*November*/
+#nov a {
 	color: rgb(146, 0, 183);
 }
 
-#dec .title h2 {
+#nov a:hover, #nov a:active {
+	color: rgb(100, 0, 140);
+}
+
+/*December*/
+#dec a {
 	color: #5a00b7;
 }
 
-#jan .title {
-	background-color: #005ab7;
+#jan a {
+	color: #005ab7;
 }
 
-#feb .title {
-	background-color: #008eb7;
+#feb a {
+	color: #008eb7;
 }
 
-#mar .title {
-	background-color: #00b779;
+#mar a {
+	color: #00b779;
 }
 
-#apr .title {
-	background-color: #45b700;
+#apr a {
+	color: #45b700;
 }
 
-#may .title {
-	background-color: #81b700;
+#may a {
+	color: #81b700;
 }
 
-#jun .title {
-	background-color: #da9f00;
+#jun a {
+	color: #da9f00;
 }
 
-#jul .title {
-	background-color: #da8500;
+#jul a {
+	color: #da8500;
 }
 
-#aug .title {
-	background-color: #da6100;
+#aug a {
+	color: #da6100;
 }
 
-#sep .title {
-	background-color: #870000;
+#sep a {
+	color: #870000;
 }
 
 /* phone version */
@@ -124,8 +135,8 @@ h3 {
 		padding: .5em 1em;
 	}
 
-	p {
-		padding: 0 2em;
+	p, address {
+		padding: 0 1em;
 		margin: auto auto 1em auto;
 	}
 
@@ -149,6 +160,15 @@ h3 {
 	.charity {
 		clear: both;
 	}
+
+	.donate {
+		display: inline-block;
+		margin: auto;
+		padding: 5px;
+		background: rgb(25,25,25);
+		color: white;
+		border-radius: 5px;
+	}
 }
 
 /* tablet version */
@@ -161,7 +181,7 @@ h3 {
 		margin-bottom: .25em;
 	}
 
-	p {
+	p, address {
 		max-width: 40em;
 		margin: auto auto 1em auto;
 	}
@@ -189,6 +209,16 @@ h3 {
 
 	.charity {
 		margin-left: 125px;
+	}
+
+	.donate {
+		font-size: 32px;
+		display: inline-block;
+		margin: auto;
+		padding: 10px;
+		background: rgb(25,25,25);
+		color: white;
+		border-radius: 5px;
 	}
 }
 
