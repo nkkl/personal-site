@@ -9,13 +9,23 @@ var facts = [
 	"On a good day, I know all of the countries of the world.",
 	"My brother and I memorized the original 151 Pok&eacute;mon together.",
 	"I made One Velociraptor Per Child because OLPC employees told me it was hilarious.",
-	"If you refresh this page you will (probably) see a different fact.",
 	"Dinosaurs and Batman are my best design inspiration.",
 	"I still have my wisdom teeth.",
-	"I was born on my due date."
+	"I was born on my due date.",
+	"My humanities capstone project is the most popular thing I&apos;ve ever written."
 ];
 
-var rand = Math.floor(Math.random() * facts.length);
-var randomfact = facts[rand];
+var NewFact = function() {
+	var rand = Math.floor(Math.random() * facts.length);
+	var randomfact = facts[rand];
 
-$("#description").append( $('<p class="facts">A true fact: ' + randomfact + '</p><p style="font-size: 75%">* facts chosen randomly</p>' ) );
+	$(".facts").remove();
+
+	$("#description").append( $('<p class="facts">A true fact: ' + randomfact + ' <a style="cursor: pointer">(new fact)</a></p>' ) );
+
+	$(".facts").bind('click', function() {
+			NewFact();
+		});
+}
+
+NewFact();
