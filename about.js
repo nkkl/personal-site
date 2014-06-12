@@ -12,7 +12,10 @@ var facts = [
 	"Dinosaurs and Batman are my best design inspiration.",
 	"I still have my wisdom teeth.",
 	"I was born on my due date.",
-	"My humanities capstone project is the most popular thing I&apos;ve ever written."
+	"My humanities capstone project is the most popular thing I&apos;ve ever written.",
+	"My wrists are too small to effectively break out of handcuffs.",
+	"It took me 216 tries to beat Spelunky.",
+	"A lot of people think I have a Canadian accent (I&apos;m from California)."
 ];
 
 var NewFact = function() {
