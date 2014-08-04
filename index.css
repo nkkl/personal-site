@@ -1,0 +1,169 @@
+/* GENERAL */
+h1 {
+	font-size: 32pt;
+	margin: 1em;
+}
+
+p {
+	margin: 1em auto;
+	font-size: 16pt;
+
+	max-width: 50em;
+}
+
+/* HEADER */
+#header {
+	text-align: center;
+}
+
+/* INTRO */
+#intro {
+	padding: 1em;
+	background: rgb(200,200,200);
+}
+
+/* PROJECTS */
+#projects {
+	min-width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#projects .desc {
+	margin-left: .25em;
+}
+
+#projects p {
+	margin: .5em auto;
+	text-align: left;
+	font-size: 12pt;
+}
+
+#projects .project {
+	display: inline-block;
+	margin: 20px;
+	padding-left: 0;
+	width: 200px;
+	height: 200px;
+	position: relative;
+
+	background-size: 200px 200px;
+}
+
+#projects .content {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	margin-bottom: auto;
+	max-height: 180px;
+	max-width: 180px;
+	width: 100%;
+	overflow: auto;
+	background: #333;
+	background: rgba(0,0,0,.8);
+	color: #ddd;
+}
+
+#projects .project h3 {
+	font-size: 150%;
+	color: white;
+}
+
+@media (max-width: 980px) {
+	#projects .project .content h4 {
+		display: inline-block;
+	}
+
+	#projects .project .content p {
+		display: inline-block;
+	}
+
+	#projects .project .content ul {
+		display: inline-block;
+	}
+
+	#projects .project .content {
+		height: 300px;
+	}
+}
+
+@media (min-width: 980px) {	
+	#projects .project .content h4 {
+		display: none;
+	}
+
+	#projects .project .content p {
+		display: none;
+	}
+
+	#projects .project .content ul {
+		display: none;
+	}
+
+	#projects .project:hover .content h4 {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content p {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content ul {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content {
+		height: 300px;
+	}
+}
+
+#giving {
+	background-image: url("img/giving_350.png");
+	background-repeat: no-repeat;
+}
+
+#gator {
+	background-image: url("img/gator_350.jpg");
+	background-repeat: no-repeat;
+}
+
+#ovpc {
+	background-image: url("img/ovpc_350.png");
+	background-repeat: no-repeat;
+}
+
+/* LINKS */
+#twitter {}
+
+#medium {}
+
+#linkedin {}
+
+#github {}
+
+/* MSFT */
+#msft {
+	max-height: 400px;
+	background: rgb(200, 200, 250);
+	padding: 15em 1em 1em 1em;
+}
+
+/* AFSEA */
+#afsea {
+	max-height: 400px;
+	background: rgb(199, 250, 200);
+	padding: 15em 1em 1em 1em;
+}
+
+/* DESCRIPTION */
+#description {
+	max-height: 700px;
+	background: rgb(200,200,200);
+	padding: 15em 1em 1em 1em;
+}
+
+/* CLOSER */
+#closer {
+	padding: 1em 1em 3em 1em;
+}
