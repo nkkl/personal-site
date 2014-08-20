@@ -15,8 +15,12 @@ var facts = [
 	"My humanities capstone project is the most popular thing I&apos;ve ever written.",
 	"My wrists are too small to effectively break out of handcuffs.",
 	"It took me 216 tries to beat Spelunky.",
+<<<<<<< HEAD
 	"A lot of people think I have a Canadian accent (I&apos;m from California).",
 	"I&apos;m allergic to bedbugs. Learning this was extraordinarily unpleasant."
+=======
+	"A lot of people think I have a Canadian accent."
+>>>>>>> origin/gh-pages
 ];
 
 var NewFact = function() {
