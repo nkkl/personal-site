@@ -42,8 +42,9 @@ h3 {
 	padding: 10px 20px;
 }
 
-.header a {
+.header .nav {
 	font-size: 10pt;
+	padding-left: 1em;
 }
 
 #why {
@@ -241,7 +242,7 @@ h3 {
 		margin: 0 1em .25em 1em;
 	}
 	
-	.header a {
+	.header .nav a {
 		font-size: 10pt;
 		margin-left: 4em;
 	}

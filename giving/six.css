@@ -1,0 +1,84 @@
+#scorecard {
+	min-height: 100%;
+	text-align: center;
+	margin: 2em auto;
+}
+
+#scorecard table {
+	display: inline-block;
+	left: 50%;
+}
+
+#scorecard a {
+	display: inline-block;
+}
+
+#scorecard td {
+	padding: .05em .25em;
+}
+
+/* EVERYONE GETS A COLOR */
+.first a {
+	border: 15px solid #BF1386;
+	border-radius: 15px;
+}
+
+.second a {
+	border: 15px solid rgb(3,18,77);
+	border-radius: 15px;
+}
+
+.third a {
+	border: 15px solid rgb(50,200,250);
+	border-radius: 15px;
+}
+
+.fourth a {
+	border: 15px solid #21DCC6;
+	border-radius: 15px;
+}
+
+.fifth a {
+	border: 15px solid #6415B3;
+	border-radius: 15px;
+}
+
+.sixth a {
+	border: 15px solid rgb(50,187,237);
+	border-radius: 15px;
+}
+
+.seventh a {
+	border: 15px solid #6600FF;
+	border-radius: 15px;
+}
+
+.eighth a {
+	border: 15px solid #F000C9;
+	border-radius: 15px;
+}
+
+.ninth a {
+	border: 15px solid #73F5E8;
+	border-radius: 15px;
+}
+
+.tenth a {
+	border: 15px solid #F29D3D;
+	border-radius: 15px;
+}
+
+.eleventh a {
+	border: 15px solid #3579FF;
+	border-radius: 15px;
+}
+
+.twelfth a {
+	border: 15px solid blue;
+	border-radius: 15px;
+}
+
+.thirteenth a {
+	border: 15px solid #00FFBB;
+	border-radius: 15px;
+}
