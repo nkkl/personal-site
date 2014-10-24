@@ -7,6 +7,7 @@
 #scorecard table {
 	display: inline-block;
 	left: 50%;
+	text-align: left;
 }
 
 #scorecard a {
@@ -17,68 +18,200 @@
 	padding: .05em .25em;
 }
 
-/* EVERYONE GETS A COLOR */
-.first a {
-	border: 15px solid #BF1386;
-	border-radius: 15px;
+
+/* PHONE & TABLET VERSION */
+/* needs to be touch-friendly */
+@media (max-width: 699px) {
+	#scorecard table {
+		display: none;
+	}
+
+	#scorecard {
+		text-align: left;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#scorecard .touchable > div {
+		display: inline-block;
+		margin: 5px;
+		height: 0;
+		width: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	#scorecard .flyout {
+		position: absolute;
+		display: none;
+		overflow: none;
+
+		min-width: 6em;
+
+		bottom: 22px;
+		left: -50px;
+
+		background-color: white;
+		border: 1px solid rgb(200,200,200);
+		border-radius: 10px;
+	}
+
+	#scorecard .flyout p {
+		margin: 3px 10px;
+		padding: 0;
+	}
+
+	#scorecard div:hover > .flyout {
+		display: inline-block;
+	}
+
+	/* EVERYONE GETS A COLOR */
+	.first {
+		border: 20px solid #BF1386;
+		border-radius: 20px;
+	}
+
+	.second {
+		border: 20px solid rgb(3,18,77);
+		border-radius: 20px;
+	}
+
+	.third {
+		border: 20px solid rgb(50,200,200);
+		border-radius: 20px;
+	}
+
+	.fourth {
+		border: 20px solid #21DCC6;
+		border-radius: 20px;
+	}
+
+	.fifth {
+		border: 20px solid #6420B3;
+		border-radius: 20px;
+	}
+
+	.sixth {
+		border: 20px solid rgb(50,187,237);
+		border-radius: 20px;
+	}
+
+	.seventh {
+		border: 20px solid #6600FF;
+		border-radius: 20px;
+	}
+
+	.eighth {
+		border: 20px solid #F000C9;
+		border-radius: 20px;
+	}
+
+	.ninth {
+		border: 20px solid #73F5E8;
+		border-radius: 20px;
+	}
+
+	.tenth {
+		border: 20px solid #F29D3D;
+		border-radius: 20px;
+	}
+
+	.eleventh {
+		border: 20px solid #3579FF;
+		border-radius: 20px;
+	}
+
+	.twelfth {
+		border: 20px solid blue;
+		border-radius: 20px;
+	}
+
+	.thirteenth {
+		border: 20px solid #00FFBB;
+		border-radius: 20px;
+	}
+
+	.fourteenth {
+		border: 20px solid rgb(205,0,149);
+		border-radius: 20px;
+	}
 }
 
-.second a {
-	border: 15px solid rgb(3,18,77);
-	border-radius: 15px;
-}
+/* PC VERSION */
+/* assume mouse hover works */
+@media (min-width: 700px) {
+	#scorecard .touchable {
+		display: none;
+	}
 
-.third a {
-	border: 15px solid rgb(50,200,250);
-	border-radius: 15px;
-}
+	/* EVERYONE GETS A COLOR */
+	.first a {
+		border: 15px solid #BF1386;
+		border-radius: 15px;
+	}
 
-.fourth a {
-	border: 15px solid #21DCC6;
-	border-radius: 15px;
-}
+	.second a {
+		border: 15px solid rgb(3,18,77);
+		border-radius: 15px;
+	}
 
-.fifth a {
-	border: 15px solid #6415B3;
-	border-radius: 15px;
-}
+	.third a {
+		border: 15px solid rgb(50,200,250);
+		border-radius: 15px;
+	}
 
-.sixth a {
-	border: 15px solid rgb(50,187,237);
-	border-radius: 15px;
-}
+	.fourth a {
+		border: 15px solid #21DCC6;
+		border-radius: 15px;
+	}
 
-.seventh a {
-	border: 15px solid #6600FF;
-	border-radius: 15px;
-}
+	.fifth a {
+		border: 15px solid #6415B3;
+		border-radius: 15px;
+	}
 
-.eighth a {
-	border: 15px solid #F000C9;
-	border-radius: 15px;
-}
+	.sixth a {
+		border: 15px solid rgb(50,187,237);
+		border-radius: 15px;
+	}
 
-.ninth a {
-	border: 15px solid #73F5E8;
-	border-radius: 15px;
-}
+	.seventh a {
+		border: 15px solid #6600FF;
+		border-radius: 15px;
+	}
 
-.tenth a {
-	border: 15px solid #F29D3D;
-	border-radius: 15px;
-}
+	.eighth a {
+		border: 15px solid #F000C9;
+		border-radius: 15px;
+	}
 
-.eleventh a {
-	border: 15px solid #3579FF;
-	border-radius: 15px;
-}
+	.ninth a {
+		border: 15px solid #73F5E8;
+		border-radius: 15px;
+	}
 
-.twelfth a {
-	border: 15px solid blue;
-	border-radius: 15px;
-}
+	.tenth a {
+		border: 15px solid #F29D3D;
+		border-radius: 15px;
+	}
 
-.thirteenth a {
-	border: 15px solid #00FFBB;
-	border-radius: 15px;
+	.eleventh a {
+		border: 15px solid #3579FF;
+		border-radius: 15px;
+	}
+
+	.twelfth a {
+		border: 15px solid blue;
+		border-radius: 15px;
+	}
+
+	.thirteenth a {
+		border: 15px solid #00FFBB;
+		border-radius: 15px;
+	}
+
+	.fourteenth a {
+		border: 15px solid rgb(255,0,149);
+		border-radius: 15px;
+	}
 }
