@@ -1,0 +1,63 @@
+var donations = [
+	[
+		["https://www.fistulafoundation.org/donate/", "Fistula Foundation"],
+		["http://www.donorschoose.org/", "Donor&apos;s Choose"],
+		["http://www.donorschoose.org/", "Donor&apos;s Choose"],
+		["https://www.sfspca.org/get-involved/donate", "SF SPCA"],
+		["http://www.accfb.org/donation/", "Alameda County Community Food Bank"],
+		["http://www.pinestreetinn.org/donate", "Pine Street Inn"],
+		["http://www.projectnightnight.org/Donate.html", "Project Night Night"],
+		["https://secure2.convio.net/lirs/site/Donation2?df_id=1441&1441.donation=form1#.VDNg1q2vBhE", "Lutheran Immigration and Refugee Service"],
+		["https://shop.stjude.org/GiftCatalog/donation.do?cID=14262&pID=24671", "St. Jude Children&apos;s Research Hospital"],
+		["http://www.plantchicago.com/non-profit/donate/", "Plant Chicago"],
+		["https://www.olin.edu/invest/ways/making-your-gift-olin-college/", "Olin College"],
+		["http://www.stbaldricks.org/", "St. Baldrick&apos;s Foundation"],
+		["http://eyfp.org/donate/", "Elmhurst&ndash;Yorkfield Food Pantry"],
+		["https://secure3.convio.net/jdrf3/site/Donation2?2376.donation=form1&df_id=2376", "JDRF"]
+	],
+	[
+		["http://adaywithouttouch.org/yaytiffany", "A Day Without Touch/Doctors Without Borders"]
+	]
+]
+
+var classes = [
+	"first",
+	"second",
+	"third",
+	"fourth",
+	"fifth",
+	"sixth",
+	"seventh",
+	"eighth",
+	"ninth",
+	"tenth",
+	"eleventh",
+	"twelfth",
+	"thirteenth",
+	"fourteenth"
+]
+
+var AddContent = function() {
+	// modify table for large screens
+	var rounds = donations.length;
+	var people = classes.length;
+
+	for (var i = 0; i < rounds; i++) {
+		var currentRound = "round-" + (i+1);
+		$("#scorecard table").append('<tr class="' + currentRound + '"><td>Round ' + (i+1) + '</td></tr>');
+
+		for (var j = 0; j < people; j++) {
+			if (donations[i][j]) {
+				var charity = donations[i][j];
+
+				// append to table for large screens
+				$('#scorecard .' + currentRound).append('<td class="' + classes[j] + '"><a href="' + charity[0] + '"></a></td>');
+				$('.touchable').append('<div class="' + classes[j] + '"><div class="flyout"><p>Round ' + (i+1) + ': <a href="' + charity[0] + '">' + charity[1] + '</a></p>');
+			} else {
+				$("scorecard ." + currentRound).append('<td class="missing"></td>');
+			}
+		}
+	}
+}
+
+AddContent();
