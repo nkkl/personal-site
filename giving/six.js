@@ -16,7 +16,20 @@ var donations = [
 		["https://secure3.convio.net/jdrf3/site/Donation2?2376.donation=form1&df_id=2376", "JDRF"]
 	],
 	[
-		["http://adaywithouttouch.org/yaytiffany", "A Day Without Touch/Doctors Without Borders"]
+		["http://adaywithouttouch.org/yaytiffany", "A Day Without Touch/Doctors Without Borders"],
+		[],
+		[],
+		[],
+		[],
+		["http://www.donorschoose.org/project/help-me-make-my-students-engineers-with/1377208/", "Donor&apos;s Choose"],
+		["https://donate.wikimedia.org/w/index.php?title=Special:FundraiserLandingPage&country=US&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_wikimediafoundation.org", "Wikimedia Foundation"],
+		[],
+		[],
+		["https://secure.qgiv.com/for/cnt", "Center for Neighborhood Technology"],
+		[],
+		[],
+		[],
+		[]
 	]
 ]
 
@@ -47,14 +60,14 @@ var AddContent = function() {
 		$("#scorecard table").append('<tr class="' + currentRound + '"><td>Round ' + (i+1) + '</td></tr>');
 
 		for (var j = 0; j < people; j++) {
-			if (donations[i][j]) {
+			if (donations[i][j].length > 0) {
 				var charity = donations[i][j];
 
 				// append to table for large screens
 				$('#scorecard .' + currentRound).append('<td class="' + classes[j] + '"><a href="' + charity[0] + '"></a></td>');
 				$('.touchable').append('<div class="' + classes[j] + '"><div class="flyout"><p>Round ' + (i+1) + ': <a href="' + charity[0] + '">' + charity[1] + '</a></p>');
 			} else {
-				$("scorecard ." + currentRound).append('<td class="missing"></td>');
+				$("#scorecard ." + currentRound).append('<td class="missing"></td>');
 			}
 		}
 	}
