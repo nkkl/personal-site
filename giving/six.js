@@ -23,7 +23,7 @@ var donations = [
 		[],
 		["http://www.donorschoose.org/project/help-me-make-my-students-engineers-with/1377208/", "Donor&apos;s Choose"],
 		["https://donate.wikimedia.org/w/index.php?title=Special:FundraiserLandingPage&country=US&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_wikimediafoundation.org", "Wikimedia Foundation"],
-		[],
+		["https://donate.hrw.org/ea-action/action?ea.client.id=1908&ea.campaign.id=32607", "Human Rights Watch"],
 		[],
 		["https://secure.qgiv.com/for/cnt", "Center for Neighborhood Technology"],
 		[],
