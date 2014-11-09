@@ -26,9 +26,9 @@ var donations = [
 		["https://donate.hrw.org/ea-action/action?ea.client.id=1908&ea.campaign.id=32607", "Human Rights Watch"],
 		[],
 		["https://secure.qgiv.com/for/cnt", "Center for Neighborhood Technology"],
-		[],
-		[],
-		[],
+		["https://donate.charitywater.org/donate", "Charity:Water"],
+		["http://www.heifer.org/gift-catalog/animals-nutrition/index.html", "Heifer International"],
+		["http://eyfp.org/donate/", "Elmhurst&ndash;Yorkfield Food Pantry"],
 		[]
 	]
 ]
