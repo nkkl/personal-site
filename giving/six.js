@@ -17,8 +17,8 @@ var donations = [
 	],
 	[
 		["http://adaywithouttouch.org/yaytiffany", "A Day Without Touch/Doctors Without Borders"],
-		[],
-		[],
+		["http://www.nyyouthsymphony.org/support/donate", "New York Youth Symphony"],
+		["http://www.nyyouthsymphony.org/support/donate", "New York Youth Symphony"],
 		["http://www.projectnightnight.org/Donate.html", "Project Night Night"],
 		["http://www.accfb.org/donation/", "Alameda County Community Food Bank"],
 		["http://www.donorschoose.org/project/help-me-make-my-students-engineers-with/1377208/", "Donor&apos;s Choose"],
