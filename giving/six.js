@@ -30,6 +30,22 @@ var donations = [
 		["http://www.heifer.org/gift-catalog/animals-nutrition/index.html", "Heifer International"],
 		["http://eyfp.org/donate/", "Elmhurst&ndash;Yorkfield Food Pantry"],
 		[]
+	],
+	[
+		[]. //01
+		["http://resiliencelaw.org/", "Resiliency Advocacy Project"], //02
+		[], //03
+		[], //04
+		[], //05
+		[], //06
+		[], //07
+		[], //08
+		[], //09
+		["http://www.workingbikes.org/about/", "Working Bikes"], //10
+		[], //11
+		[], //12
+		[], //13
+		[]  //14
 	]
 ]
 
