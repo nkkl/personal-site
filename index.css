@@ -1,26 +1,78 @@
 /* GENERAL */
 h1 {
 	font-size: 32pt;
-	margin: 1em;
+	margin: 20px 0;
+}
+
+h2 {
+	color: #CF0000;
+	margin: 1em auto 0 auto;
+}
+
+h2 + p {
+	margin-top: 0;
 }
 
 p {
-	margin: 1em auto;
-	font-size: 16pt;
+	margin: 1em 1em 1em 0;
+	font-size: 13pt;
 
 	max-width: 50em;
 }
 
-/* HEADER */
-#header {
-	text-align: center;
+ul {
+	padding-left: 1em;
+	border-left: 1px solid rgb(150, 150, 150);
 }
 
-/* INTRO */
-#intro {
-	padding: 1em;
-	background: rgb(200,200,200);
+ul li {
+	list-style: none;
+	margin: 1em auto;
 }
+
+/* HEADER */
+#header {
+	position: relative;
+}
+
+#links {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+#links div {
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	border-radius: 4px;
+	background-color: rgb(25,25,25)
+}
+
+#twitter {
+	background-image: url("img/twitter.png");
+	background-size: contain;
+}
+
+#linkedin {
+	background-image: url("img/linkedin.png");
+	background-size: contain;
+}
+
+#medium {
+	background-image: url("img/medium.png");
+	background-size: contain;
+}
+
+#github {
+	background-image: url("img/github.png");
+	background-size: contain;
+}
+
+#links div:hover {
+	background-color: #CF0000;
+}
+
 
 /* PROJECTS */
 #projects {
@@ -33,6 +85,10 @@ p {
 	margin-left: .25em;
 }
 
+#projects a:link, #projects a:visited {
+	color: #CF0000;
+}
+
 #projects p {
 	margin: .5em auto;
 	text-align: left;
@@ -41,13 +97,13 @@ p {
 
 #projects .project {
 	display: inline-block;
-	margin: 20px;
+	margin: 10px;
 	padding-left: 0;
-	width: 200px;
-	height: 200px;
+	width: 175px;
+	height: 175px;
 	position: relative;
 
-	background-size: 200px 200px;
+	background-size: contain;
 }
 
 #projects .content {
@@ -56,8 +112,8 @@ p {
 	bottom: 0;
 	padding: 10px;
 	margin-bottom: auto;
-	max-height: 180px;
-	max-width: 180px;
+	max-height: 155px;
+	max-width: 155px;
 	width: 100%;
 	overflow: auto;
 	background: #333;
@@ -71,6 +127,18 @@ p {
 }
 
 @media (max-width: 980px) {
+	#wrapper {
+		margin: 1em;
+	}
+
+	#header h1 {
+		margin-top: -.25em;
+	}
+
+	#links {
+		position: static;
+	}
+
 	#projects .project .content h4 {
 		display: inline-block;
 	}
@@ -86,9 +154,46 @@ p {
 	#projects .project .content {
 		height: 300px;
 	}
+
+	/** FOOTER **/
+	#footer {
+		display: inline-block;
+		float: right;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
 }
 
-@media (min-width: 980px) {	
+@media (min-width: 600px) {
+	#links {
+		position: absolute;
+	}
+}
+
+@media (min-width: 980px) {
+	body {
+		background-image: url("img/background_250.jpg");
+		background-position: 0 center;
+		background-attachment: fixed;
+		background-repeat: repeat-y;
+	}
+
+	#wrapper {
+		min-height: 100vh;
+		overflow: hidden;
+		margin: 0 0 0 270px;
+		padding-bottom: 2em;
+		background-image: url("img/cream_dust.png");
+	}
+
+	#links div {
+		width: 25px;
+		height: 25px;
+	}
+
 	#projects .project .content h4 {
 		display: none;
 	}
@@ -116,10 +221,32 @@ p {
 	#projects .project:hover .content {
 		height: 300px;
 	}
+
+	/** FOOTER **/
+	#footer {
+		clear: both;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
+
+@media (min-width: 1300px) {
+	body {
+		background-image: url("img/background.jpg");
+	}
+
+	#wrapper {
+		margin-left: 520px;
+	}
 }
 
 #giving {
-	background-image: url("img/giving_350.png");
+	background-image: url("img/give6_350.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -133,6 +260,11 @@ p {
 	background-repeat: no-repeat;
 }
 
+#hibutton {
+	background-image: url("img/hibutton_350.png");
+	background-repeat: no-repeat;
+}
+
 /* LINKS */
 #twitter {}
 
@@ -141,29 +273,3 @@ p {
 #linkedin {}
 
 #github {}
-
-/* MSFT */
-#msft {
-	max-height: 400px;
-	background: rgb(200, 200, 250);
-	padding: 15em 1em 1em 1em;
-}
-
-/* AFSEA */
-#afsea {
-	max-height: 400px;
-	background: rgb(199, 250, 200);
-	padding: 15em 1em 1em 1em;
-}
-
-/* DESCRIPTION */
-#description {
-	max-height: 700px;
-	background: rgb(200,200,200);
-	padding: 15em 1em 1em 1em;
-}
-
-/* CLOSER */
-#closer {
-	padding: 1em 1em 3em 1em;
-}

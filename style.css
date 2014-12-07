@@ -18,13 +18,13 @@ em, i {
 	font-style: italic;
 }
 
-a, a:link, a:active, a:hover, a:visited {
+a:link, a:active, a:hover, a:visited {
 	text-decoration: none;
-	color: #FF6600;
+	color: #AF0000;
 }
 
 a:active, a:hover {
-	color: #EE0000;
+	color: #FF0000;
 	text-decoration: underline;
 }
 
