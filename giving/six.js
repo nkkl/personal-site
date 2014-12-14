@@ -44,7 +44,7 @@ var donations = [
 		["http://www.workingbikes.org/about/", "Working Bikes"],
 		["http://www.endowmentinstitute.org/support-our-work/", "Sustainable Endowments Institute"],
 		["http://www.ferguson.lib.mo.us", "Ferguson Public Library"],
-		[],
+		["http://eyfp.org/donate", "Elmhurst&ndash;Yorkfield Food Pantry"],
 		[]
 	]
 ]
