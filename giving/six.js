@@ -38,12 +38,12 @@ var donations = [
 		[],
 		[],
 		[],
-		[],
+		["https://www.olin.edu/invest/ways/making-your-gift-olin-college/", "Olin College"],
 		[],
 		[],
 		["http://www.workingbikes.org/about/", "Working Bikes"],
-		[],
-		[],
+		["http://www.endowmentinstitute.org/support-our-work/", "Sustainable Endowments Institute"],
+		["http://www.ferguson.lib.mo.us", "Ferguson Public Library"],
 		[],
 		[]
 	]
