@@ -26,7 +26,7 @@ var NewFact = function() {
 
 	$(".facts").remove();
 
-	$("#description").append( $('<p class="facts">A true fact: ' + randomfact + ' <a style="cursor: pointer">(new fact)</a></p>' ) );
+	$("#description").append( $('<p class="facts">Fun fact: ' + randomfact + ' <a style="cursor: pointer">(new fact)</a></p>' ) );
 
 	$(".facts").bind('click', function() {
 			NewFact();
