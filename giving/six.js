@@ -34,7 +34,7 @@ var donations = [
 	[
 		[],
 		["http://resiliencelaw.org/", "Resiliency Advocacy Project"],
-		[],
+		["https://www.commitchange.com//wa/olympia/capital-recovery-center", "Capital Recovery Center"],
 		["https://supporters.eff.org/donate", "Electronic Frontier Foundation"],
 		[],
 		["http://twloha.com/donate", "To Write Love on Her Arms"],
