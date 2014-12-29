@@ -32,7 +32,7 @@ var donations = [
 		[]
 	],
 	[
-		[],
+		["https://rally.org/theMOVE/c/dXCImx6EYOL#", "theMOVE"],
 		["http://resiliencelaw.org/", "Resiliency Advocacy Project"],
 		["https://www.commitchange.com//wa/olympia/capital-recovery-center", "Capital Recovery Center"],
 		["https://supporters.eff.org/donate", "Electronic Frontier Foundation"],
