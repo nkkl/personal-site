@@ -39,7 +39,7 @@ var donations = [
 		[],
 		["http://twloha.com/donate", "To Write Love on Her Arms"],
 		["https://www.olin.edu/invest/ways/making-your-gift-olin-college/", "Olin College"],
-		[],
+		["https://donatenow.networkforgood.org/1439676", "Harvard Square Homeless Shelter"],
 		[],
 		["http://www.workingbikes.org/about/", "Working Bikes"],
 		["http://www.endowmentinstitute.org/support-our-work/", "Sustainable Endowments Institute"],
