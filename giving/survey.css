@@ -1,0 +1,15 @@
+#scatter {
+	min-width: 300px;
+	max-width: 90%;
+	min-height: 400px;
+	max-height: 90vh;
+	margin: 1em auto;
+}
+
+#percentage {
+	min-width: 300px;
+	max-width: 90%;
+	min-height: 400px;
+	max-height: 90vh;
+	margin: 1em auto;
+}
