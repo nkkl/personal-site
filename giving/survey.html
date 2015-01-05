@@ -5,6 +5,7 @@
 
 	<!-- import stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="giving.css">
 	<link rel="stylesheet" type="text/css" href="survey.css">
 
 	<!-- meta information -->
@@ -13,10 +14,29 @@
 	<meta name="keywords" content="nikki lee, nicole lee, giving, philanthropy">
 </head>
 <body>
+	<div class="header">
+		<a class="nav" href="../">&larr; back to nicoleblee.com</a>
+		
+		<h1>2014 Giving Survey</h1>
 
-	<div id="scatter"></div>
+		<p>I asked people how much they gave in 2014. These are the results.</p>
+	</div>
 
-	<div id="percentage"></div>
+	<div id="scatter" class="full"></div>
+
+	<div id="percentage" class="full"></div>
+
+	<div class="container">
+		<div id="incomehist" class="half"></div>
+
+		<div id="donationhist" class="half"></div>
+
+		<div id="percentagehist" class="half"></div>
+	</div>
+
+	<div class="container">
+		<p>Built with <a href="https://developers.google.com/apps-script/">Google Apps Script</a> and <a href="http://www.highcharts.com/">HighCharts</a>. Data updates hourly.</p>
+	</div>
 
 	<!-- import javascript -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>

@@ -1,15 +1,22 @@
-#scatter {
-	min-width: 300px;
+.full {
+	min-width: 500px;
 	max-width: 90%;
 	min-height: 400px;
 	max-height: 90vh;
 	margin: 1em auto;
 }
 
-#percentage {
-	min-width: 300px;
+.container {
+	min-width: 500px;
 	max-width: 90%;
-	min-height: 400px;
-	max-height: 90vh;
 	margin: 1em auto;
+}
+
+.half {
+	min-width: 500px;
+	max-width: 45%;
+	min-height: 200px;
+	max-height: 90vh;
+	margin: 1em;
+	display: inline-block;
 }
