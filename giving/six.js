@@ -46,6 +46,22 @@ var donations = [
 		["http://www.ferguson.lib.mo.us", "Ferguson Public Library"],
 		["http://eyfp.org/donate", "Elmhurst&ndash;Yorkfield Food Pantry"],
 		[]
+	],
+	[
+		[],
+		[],
+		[],
+		["http://www.missionbit.com/donate/", "Mission Bit"],
+		[],
+		["http://neofuturists.org/get-involved/", "Neofuturists"],
+		["http://csacares.org/", "Community Services Agency"],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
 	]
 ]
 

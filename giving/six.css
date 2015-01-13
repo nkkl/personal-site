@@ -1,5 +1,11 @@
+.wrapper {
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	padding: 0;
+}
+
 #scorecard {
-	min-height: 50vh;
 	text-align: center;
 	margin: 2em auto;
 }
@@ -18,6 +24,21 @@
 	padding: .05em .25em;
 }
 
+.charities {
+	max-width: 40em;
+	margin: 2em auto;
+}
+
+.charities a:hover, .charities a:active {
+	text-decoration: none;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	right: 0;
+}
 
 /* PHONE & TABLET VERSION */
 /* needs to be touch-friendly */
