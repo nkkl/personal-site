@@ -1,6 +1,6 @@
 .wrapper {
 	overflow: hidden;
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	padding: 0;
 }
@@ -84,6 +84,10 @@
 
 	#scorecard div:hover > .flyout {
 		display: inline-block;
+	}
+
+	.charities {
+		margin: 1em 1em 3em 1em;
 	}
 
 	/* EVERYONE GETS A COLOR */

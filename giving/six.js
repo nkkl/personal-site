@@ -57,7 +57,7 @@ var donations = [
 		["http://csacares.org/", "Community Services Agency"],
 		[],
 		[],
-		[],
+		["http://www.solid-ground.org/Pages/Default.aspx", "Solid Ground"],
 		[],
 		[],
 		[],
