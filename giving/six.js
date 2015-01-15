@@ -48,7 +48,7 @@ var donations = [
 		[]
 	],
 	[
-		[],
+		["http://www.arlboston.org/", "Animal Rescue League of Boston"],
 		[],
 		[],
 		["http://www.missionbit.com/donate/", "Mission Bit"],
