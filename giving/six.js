@@ -49,18 +49,18 @@ var donations = [
 	],
 	[
 		[],
-		[],
+		["http://www.theveraproject.org/", "The Vera Project"],
 		[],
 		["http://www.missionbit.com/donate/", "Mission Bit"],
 		[],
 		["http://neofuturists.org/get-involved/", "Neofuturists"],
 		["http://csacares.org/", "Community Services Agency"],
-		[],
+		["http://www.sparechangenews.net/", "Spare Change News"],
 		[],
 		["http://www.solid-ground.org/Pages/Default.aspx", "Solid Ground"],
 		[],
-		[],
-		[],
+		["http://fosterkidscharity.org/How_You_Can_Help.html", "Foster Kids Charity"],
+		["http://dupagepads.org/donate/", "DuPage Pads"],
 		[]
 	]
 ]
