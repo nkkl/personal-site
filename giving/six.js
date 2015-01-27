@@ -51,7 +51,7 @@ var donations = [
 
 		["http://www.arlboston.org/", "Animal Rescue League of Boston"],
 		["http://www.theveraproject.org/", "The Vera Project"],
-		[],
+		["https://www.commitchange.com//wa/olympia/capital-recovery-center", "Capital Recovery Center"],
 		["http://www.missionbit.com/donate/", "Mission Bit"],
 		[],
 		["http://neofuturists.org/get-involved/", "Neofuturists"],
