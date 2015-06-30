@@ -4,25 +4,33 @@ var donations = [
 		['Olin College Alumni Merit Scholarship Fund','https://fundit.olin.edu/project/555a1d3109206579b4677801']
 	],
 	[
-		['Slow Roll Chicago', 'http://www.slowrollchicago.org/donate/']
+		['Slow Roll Chicago', 'http://www.slowrollchicago.org/donate/'],
+		['MarketShare', 'http://buildthemarket.org/donate/']
 	],
 	[
-		['Doctors Without Borders', 'http://www.doctorswithoutborders.org/']
+		['Doctors Without Borders', 'http://www.doctorswithoutborders.org/'],
+		['Central City Hospitality House', 'http://hospitalityhouse.org/']
 	],
 	[
 		['Revolutions Classroom Research Library', 'http://www.donorschoose.org/project/revolutions-classroom-research-library/1565268']
 	],
 	[
-		['Code.org', 'https://code.org/donate']
+		['Code.org', 'https://code.org/donate'],
+		['Olin College Alumni Merit Scholarship Fund','https://fundit.olin.edu/project/555a1d3109206579b4677801']
 	],
 	[
-		['Olin College', 'https://www.olin.edu/invest/ways/making-your-gift-olin-college/']
+		['Olin College', 'https://www.olin.edu/invest/ways/making-your-gift-olin-college/'],
+		['Women&apos;s Medical Fund', 'http://wmfwisconsin.org/']
 	],
 	[
 		['Ada Initiative', 'https://adainitiative.org/donate/']
 	],
 	[
 		['App Camp for Girls', 'https://www.indiegogo.com/projects/app-camp-for-girls-3-0/x/3976761#/story']
+	],
+	[
+		['This American Life', 'http://www.thisamericanlife.org/donate'],
+		['Project VOICE', 'http://www.virgin.com/unite/donate/project-voice']
 	]
 ]
 
@@ -35,6 +43,7 @@ var classes = [
 	"sixth",
 	"seventh",
 	"eighth",
+	"ninth"
 ]
 
 var AddContent = function() {

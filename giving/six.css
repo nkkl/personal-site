@@ -97,12 +97,12 @@
 	}
 
 	.second {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #F29D3D;
 		border-radius: 20px;
 	}
 
 	.third {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #8A2E8A;
 		border-radius: 20px;
 	}
 
@@ -112,12 +112,12 @@
 	}
 
 	.fifth {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #DB9E30;
 		border-radius: 20px;
 	}
 
 	.sixth {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #9370DB;
 		border-radius: 20px;
 	}
 
@@ -127,6 +127,11 @@
 	}
 
 	.eighth {
+		border: 20px solid rgb(25,25,25);
+		border-radius: 20px;
+	}
+
+	.ninth {
 		border: 20px solid rgb(25,25,25);
 		border-radius: 20px;
 	}
@@ -146,12 +151,12 @@
 	}
 
 	.second a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #F29D3D;
 		border-radius: 15px;
 	}
 
 	.third a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #8A2E8A;
 		border-radius: 15px;
 	}
 
@@ -161,12 +166,12 @@
 	}
 
 	.fifth a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #DB9E30;
 		border-radius: 15px;
 	}
 
 	.sixth a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #9370DB;
 		border-radius: 15px;
 	}
 
@@ -176,6 +181,11 @@
 	}
 
 	.eighth a {
+		border: 15px solid rgb(25,25,25);
+		border-radius: 15px;
+	}
+
+	.ninth a {
 		border: 15px solid rgb(25,25,25);
 		border-radius: 15px;
 	}
