@@ -122,17 +122,17 @@
 	}
 
 	.seventh {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #40a4df;
 		border-radius: 20px;
 	}
 
 	.eighth {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #FF50AF;
 		border-radius: 20px;
 	}
 
 	.ninth {
-		border: 20px solid rgb(25,25,25);
+		border: 20px solid #046380;
 		border-radius: 20px;
 	}
 }
@@ -176,17 +176,17 @@
 	}
 
 	.seventh a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #40a4df;
 		border-radius: 15px;
 	}
 
 	.eighth a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #FF50AF;
 		border-radius: 15px;
 	}
 
 	.ninth a {
-		border: 15px solid rgb(25,25,25);
+		border: 15px solid #046380;
 		border-radius: 15px;
 	}
 }
