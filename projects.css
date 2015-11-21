@@ -129,6 +129,16 @@
 		margin-left: 1em;
 	}
 
+	#orchestral {
+		background-image: url("img/orchestral_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#mediapublic {
+		background-image: url("img/mediapublic_350.png");
+		background-repeat: no-repeat;
+	}
+
 	#givesix {
 		background-image: url("img/give6_350.jpg");
 		background-repeat: no-repeat;
@@ -352,6 +362,16 @@
 		max-height: 330px;
 		max-width: 430px;
 		padding: 10px;
+	}
+
+	#orchestral {
+		background-image: url("img/orchestral_450.png");
+		background-repeat: no-repeat;
+	}
+
+	#mediapublic {
+		background-image: url("img/mediapublic_450.png");
+		background-repeat: no-repeat;
 	}
 
 	#givesix {

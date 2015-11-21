@@ -30,9 +30,14 @@ ul li {
 	margin: 1em auto;
 }
 
+body {
+	min-height: 100vh;
+}
+
 /* HEADER */
 #header {
 	position: relative;
+	overflow: hidden;
 }
 
 #links {
@@ -127,6 +132,10 @@ ul li {
 }
 
 @media (max-width: 980px) {
+	body > div {
+		margin: 1em;
+	}
+	
 	#wrapper {
 		margin: 1em;
 	}
@@ -174,24 +183,32 @@ ul li {
 }
 
 @media (min-width: 980px) {
-	body {
-		background-image: url("img/background_250.jpg");
-		background-position: 0 center;
-		background-attachment: fixed;
-		background-repeat: repeat-y;
+	body div:not(#wrapper) {
+		max-width: 992px;
+		margin: auto;
 	}
 
 	#wrapper {
-		min-height: 100vh;
+		background-image: url("img/hero_large.jpg");
+		background-size: 100%;
+		min-height: 290px;
+		max-height: 867px;
 		overflow: hidden;
-		margin: 0 0 0 270px;
-		padding-bottom: 2em;
-		background-image: url("img/cream_dust.png");
+	}
+
+	#header {
+		width: 100%;
+		height: 35px;
 	}
 
 	#links div {
 		width: 25px;
 		height: 25px;
+	}
+
+	#intro {
+		max-width: 992px;
+		margin: auto;
 	}
 
 	#projects .project .content h4 {
@@ -241,7 +258,8 @@ ul li {
 	}
 
 	#wrapper {
-		margin-left: 520px;
+		background-image: url("img/hero_hires.jpg");
+		min-height: 390px;
 	}
 }
 
