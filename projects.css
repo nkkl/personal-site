@@ -1,0 +1,437 @@
+#links {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+#links div {
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	border-radius: 4px;
+	background-color: rgb(25,25,25)
+}
+
+#twitter {
+	background-image: url("img/twitter.png");
+	background-size: contain;
+}
+
+#linkedin {
+	background-image: url("img/linkedin.png");
+	background-size: contain;
+}
+
+#medium {
+	background-image: url("img/medium.png");
+	background-size: contain;
+}
+
+#github {
+	background-image: url("img/github.png");
+	background-size: contain;
+}
+
+#links div:hover {
+	background-color: #CF0000;
+}
+
+
+#projects a:link, #projects a:visited {
+	color: #CF0000;
+}
+
+/* phone version */
+@media (max-width: 767px) {
+	p, ul {
+		margin-bottom: 1em;
+	}
+
+	body {
+	}
+
+	/** HEADER **/
+	#header {
+		padding: 10px 1em;
+	}
+
+	#links {
+		position: static;
+	}
+
+	/** PROJECTS **/
+	#projects {
+		margin: auto 2em auto 1em;
+	}
+
+	/** BIO **/
+	#biography {
+		margin: auto;
+		max-width: 500px
+	}
+
+	#biography .wrapper {
+		margin: auto 2em auto 1em;
+	}
+
+	#biography #profile {
+		max-width: 500px;
+		height: 300px;
+		margin: auto;
+		background-image: url("img/cm_wide.jpg");
+	}
+
+	/** FOOTER **/
+	#footer {
+		display: inline-block;
+		float: right;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
+
+/* tablet version */
+@media (min-width: 768px) {
+	p {
+		margin-bottom: 1em;
+	}
+
+	/** HEADER **/
+	#header {
+		padding: 1em;
+	}
+
+	#links {
+		top: 10px;
+	}
+
+	/** PROJECTS **/
+	#projects {
+		margin: auto;
+	}
+
+	#projects .project {
+		width: 350px;
+		margin: 1em auto;
+		padding-left: 350px;
+	}
+
+	#projects .content {
+		padding: 10px;
+		margin-bottom: 2em;
+	}
+
+	#projects .desc {
+		clear: both;
+		margin-top: 1em;
+		margin-left: 1em;
+	}
+
+	#orchestral {
+		background-image: url("img/orchestral_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#mediapublic {
+		background-image: url("img/mediapublic_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#givesix {
+		background-image: url("img/give6_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#rogueresearch {
+		background-image: url("img/rogueresearch_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#giving {
+		background-image: url("img/giving_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#afsea {
+		background-image: url("img/afsea_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#shapers {
+		background-image: url("img/shapers_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#helloworld {
+		background-image: url("img/helloworld_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#arrived {
+		background-image: url("img/arrived_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#gator {
+		background-image: url("img/gator_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#hfid {
+		background-image: url("img/hfid_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#mamalode {
+		background-image: url("img/mamalode_350.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#gatehopper {
+		background-image: url("img/gatehopper_350.png");
+		background-repeat: no-repeat;
+	}
+
+	#ovpc {
+		background-image: url("img/ovpc_350.png");
+		background-repeat: no-repeat;
+	}
+
+	/** BIOGRAPHY **/
+	#biography #profile {
+		width: 500px;
+		height: 300px;
+		margin: auto;
+		background-image: url("img/cm_wide.jpg");
+	}
+
+	#biography #description {
+		max-width: 30em;
+		margin: auto;
+	}
+
+	#biography #extras {
+		max-width: 30em;
+		margin: auto;
+	}
+
+	/** FOOTER **/
+	#footer {
+		clear: both;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
+
+/* standard screen size and up */
+@media (min-width: 980px) {
+	.mobile {
+		display: none;
+	}
+
+	/** HEADER **/
+	#header .active {
+		box-shadow: 0 0 2px rgb(50,50,50);
+	}
+
+	#links div {
+		width: 25px;
+		height: 25px;
+	}
+
+	/** PROJECTS **/
+	#projects {
+		margin: auto;
+	}
+
+	#projects .desc {
+		margin-left: .25em;
+	}
+
+	#projects p {
+		margin: .5em auto;
+		text-align: left;
+	}
+
+	#projects .project {
+		display: inline-block;
+		margin: 20px;
+		padding-left: 0;
+		width: 350px;
+		height: 350px;
+		position: relative;
+	}
+
+	#projects .content {
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		margin-bottom: auto;
+		max-height: 330px;
+		max-width: 330px;
+		width: 100%;
+		overflow: auto;
+		background: #333;
+		background: rgba(0,0,0,.8);
+		color: #ddd;
+	}
+
+	#projects .project h3 {
+		font-size: 150%;
+		color: white;
+	}
+
+	#projects .project .content h4 {
+		display: none;
+	}
+
+	#projects .project .content p {
+		display: none;
+	}
+
+	#projects .project .content ul {
+		display: none;
+	}
+
+	#projects .project:hover .content h4 {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content p {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content ul {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content {
+		height: 340px;
+	}
+
+	/** BIOGRAPHY **/
+	#biography {
+		text-align: center;
+		margin: auto;
+	}
+
+	#biography #profile, #biography .wrapper {
+		text-align: left;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	#biography #profile {
+		width: 250px;
+		height: 500px;
+		margin-right: 2em;
+		background-image: url("img/cm.jpg");
+		background-position: right;
+	}
+
+	#biography #description {
+	}
+
+	#biography #extras {
+	}
+}
+
+/* large screen version */
+@media (min-width: 1300px) {
+	/** HEADER **/
+	#header {}
+
+	/** PROJECTS **/
+	#projects {
+	}
+
+	#projects .project {
+		margin: 1em;
+		width: 450px;
+		height: 350px;
+	}
+
+	#projects .content {
+		max-height: 330px;
+		max-width: 430px;
+		padding: 10px;
+	}
+
+	#orchestral {
+		background-image: url("img/orchestral_450.png");
+		background-repeat: no-repeat;
+	}
+
+	#mediapublic {
+		background-image: url("img/mediapublic_450.png");
+		background-repeat: no-repeat;
+	}
+
+	#givesix {
+		background-image: url("img/give6_450.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#rogueresearch {
+		background-image: url("img/rogueresearch_450.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#giving {
+		background-image: url("img/giving_450.png");
+	}
+
+	#afsea {
+		background-image: url("img/afsea_450.jpg");
+	}
+
+	#shapers {
+		background-image: url("img/shapers_450.jpg");
+	}
+
+	#helloworld {
+		background-image: url("img/helloworld_450.png");
+	}
+
+	#arrived {
+		background-image: url("img/arrived_450.jpg");
+	}
+
+	#gator {
+		background-image: url("img/gator_450.jpg");
+	}
+
+	#hfid {
+		background-image: url("img/hfid_450.jpg");
+	}
+
+	#mamalode {
+		background-image: url("img/mamalode_450.jpg");
+	}
+
+	#gatehopper {
+		background-image: url("img/gatehopper_450.png");
+	}
+
+	#ovpc {
+		background-image: url("img/ovpc_450.png");
+	}
+
+	/** BIOGRAPHY **/
+	#biography div {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#biography #extras {
+		max-width: 20em;
+		margin-left: 1.5em;
+	}
+}

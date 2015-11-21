@@ -1,0 +1,74 @@
+.header {
+	background-color: rgb(35,35,35);
+	color: rgb(200,200,200);
+}
+
+.header h2 {
+	color: white;
+}
+
+@media (max-width: 800px) {
+	body div {
+		padding: 1em;
+	}
+
+	.best, .hardest {
+		margin: 1em auto;
+	}
+
+	p:nth-child(2) {
+		margin-top: 0;
+	}
+
+	p {
+		margin-top: 1em;
+		margin-left: 1em;
+	}
+}
+
+@media (min-width: 801px) {
+	.header {
+		padding-top: 1.5em;
+		padding-bottom: 1em;
+		margin-bottom: 1em;
+	}
+
+	.header h2, .header p, .wrapper {
+		max-width: 70%;
+		margin: auto;
+	}
+
+	.wrapper {
+		overflow: hidden;
+	}
+
+	.best, .hardest {
+		max-width: 45%;
+	}
+
+	.best {
+		float: left;
+	}
+
+	.hardest {
+		float: right;
+	}
+
+	p:nth-child(2) {
+		margin-top: 0;
+	}
+
+	p {
+		margin-top: 1em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header h2, .header p, .wrapper {
+		max-width: 800px;
+	}
+
+	.best, .hardest {
+		max-width: 350px;
+	}
+}

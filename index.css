@@ -1,0 +1,293 @@
+/* GENERAL */
+h1 {
+	font-size: 32pt;
+	margin: 20px 0;
+}
+
+h2 {
+	color: #CF0000;
+	margin: 1em auto 0 auto;
+}
+
+h2 + p {
+	margin-top: 0;
+}
+
+p {
+	margin: 1em 1em 1em 0;
+	font-size: 13pt;
+
+	max-width: 50em;
+}
+
+ul {
+	padding-left: 1em;
+	border-left: 1px solid rgb(150, 150, 150);
+}
+
+ul li {
+	list-style: none;
+	margin: 1em auto;
+}
+
+body {
+	min-height: 100vh;
+}
+
+/* HEADER */
+#header {
+	position: relative;
+	overflow: hidden;
+}
+
+#links {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+#links div {
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	border-radius: 4px;
+	background-color: rgb(25,25,25)
+}
+
+#twitter {
+	background-image: url("img/twitter.png");
+	background-size: contain;
+}
+
+#linkedin {
+	background-image: url("img/linkedin.png");
+	background-size: contain;
+}
+
+#medium {
+	background-image: url("img/medium.png");
+	background-size: contain;
+}
+
+#github {
+	background-image: url("img/github.png");
+	background-size: contain;
+}
+
+#links div:hover {
+	background-color: #CF0000;
+}
+
+
+/* PROJECTS */
+#projects {
+	min-width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#projects .desc {
+	margin-left: .25em;
+}
+
+#projects a:link, #projects a:visited {
+	color: #CF0000;
+}
+
+#projects p {
+	margin: .5em auto;
+	text-align: left;
+	font-size: 12pt;
+}
+
+#projects .project {
+	display: inline-block;
+	margin: 10px;
+	padding-left: 0;
+	width: 175px;
+	height: 175px;
+	position: relative;
+
+	background-size: contain;
+}
+
+#projects .content {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	margin-bottom: auto;
+	max-height: 155px;
+	max-width: 155px;
+	width: 100%;
+	overflow: auto;
+	background: #333;
+	background: rgba(0,0,0,.8);
+	color: #ddd;
+}
+
+#projects .project h3 {
+	font-size: 150%;
+	color: white;
+}
+
+@media (max-width: 980px) {
+	body > div {
+		margin: 1em;
+	}
+	
+	#wrapper {
+		margin: 1em;
+	}
+
+	#header h1 {
+		margin-top: -.25em;
+	}
+
+	#links {
+		position: static;
+	}
+
+	#projects .project .content h4 {
+		display: inline-block;
+	}
+
+	#projects .project .content p {
+		display: inline-block;
+	}
+
+	#projects .project .content ul {
+		display: inline-block;
+	}
+
+	#projects .project .content {
+		height: 300px;
+	}
+
+	/** FOOTER **/
+	#footer {
+		display: inline-block;
+		float: right;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
+}
+
+@media (min-width: 600px) {
+	#links {
+		position: absolute;
+	}
+}
+
+@media (min-width: 980px) {
+	body div:not(#wrapper) {
+		max-width: 992px;
+		margin: auto;
+	}
+
+	#wrapper {
+		background-image: url("img/hero_large.jpg");
+		background-size: 100%;
+		min-height: 290px;
+		max-height: 867px;
+		overflow: hidden;
+	}
+
+	#header {
+		width: 100%;
+		height: 35px;
+	}
+
+	#links div {
+		width: 25px;
+		height: 25px;
+	}
+
+	#intro {
+		max-width: 992px;
+		margin: auto;
+	}
+
+	#projects .project .content h4 {
+		display: none;
+	}
+
+	#projects .project .content p {
+		display: none;
+	}
+
+	#projects .project .content ul {
+		display: none;
+	}
+
+	#projects .project:hover .content h4 {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content p {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content ul {
+		display: inline-block;
+	}
+
+	#projects .project:hover .content {
+		height: 300px;
+	}
+
+	/** FOOTER **/
+	#footer {
+		clear: both;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		font-size: 80%;
+		margin: 1em;
+		padding-left: 2em;
+		border-top: 1px solid black;
+	}
+}
+
+@media (min-width: 1300px) {
+	body {
+		background-image: url("img/background.jpg");
+	}
+
+	#wrapper {
+		background-image: url("img/hero_hires.jpg");
+		min-height: 390px;
+	}
+}
+
+#giving {
+	background-image: url("img/give6_350.jpg");
+	background-repeat: no-repeat;
+}
+
+#gator {
+	background-image: url("img/gator_350.jpg");
+	background-repeat: no-repeat;
+}
+
+#ovpc {
+	background-image: url("img/ovpc_350.png");
+	background-repeat: no-repeat;
+}
+
+#hibutton {
+	background-image: url("img/hibutton_350.png");
+	background-repeat: no-repeat;
+}
+
+/* LINKS */
+#twitter {}
+
+#medium {}
+
+#linkedin {}
+
+#github {}

@@ -1,0 +1,266 @@
+/* GENERAL */
+
+
+p, address {
+	font-size: 14pt;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 36pt;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+h2 {
+	font-size: 24pt;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+h3 {
+	font-size: 18pt;
+	line-height: 1em;
+}
+
+.title img {
+	border-radius: 50px;
+}
+
+.header, .footer {
+	background: rgb(25,25,25);
+	color: rgb(240,240,240);
+}
+
+.header p {
+	font-size: 14pt;
+}
+
+.footer {
+	font-size: 10pt;
+	text-align: right;
+	padding: 10px 20px;
+}
+
+.header .nav {
+	font-size: 10pt;
+	padding-left: 1em;
+}
+
+#why {
+	padding: 1em;
+	color: rgb(25,25,25);
+}
+
+/* MONTH THEMES */
+.monthly h2 {
+	margin: .5em inherit;
+	color: black;
+}
+
+.monthly .title {
+	color: rgb(25,25,25);
+}
+
+#why {
+	/*rgb(0,0,0);*/
+}
+
+/*October*/
+#oct a {
+	color: rgb(183, 0, 116);
+}
+
+#oct a:hover, #oct a:active {
+	color: rgb(140, 0, 70);
+}
+
+/*November*/
+#nov a {
+	color: rgb(146, 0, 183);
+}
+
+#nov a:hover, #nov a:active {
+	color: rgb(100, 0, 140);
+}
+
+/*December*/
+#dec a {
+	color: rgb(90, 0, 183);
+}
+
+#dec a:hover, #dec:active {
+	color: rgb(50, 0, 140);
+}
+
+/*January*/
+#jan a {
+	color: rgb(0, 90, 183);
+}
+
+#jan a:hover, #jan a:active {
+	color: rgb(0, 40, 140);
+}
+
+#feb a {
+	color: #008eb7;
+}
+
+#mar a {
+	color: #00b779;
+}
+
+#apr a {
+	color: #45b700;
+}
+
+#may a {
+	color: #81b700;
+}
+
+#jun a {
+	color: #da9f00;
+}
+
+#jul a {
+	color: #da8500;
+}
+
+#aug a {
+	color: #da6100;
+}
+
+#sep a {
+	color: #870000;
+}
+
+/* phone version */
+@media (max-width: 667px) {
+	.header {
+		padding: 1em;
+		padding-bottom: .25em;
+	}
+
+	.monthly {
+		padding: .5em 1em;
+	}
+
+	p, address {
+		padding: 0 1em;
+		margin: auto auto 1em auto;
+	}
+
+	.title h2 {
+		margin: 0;
+	}
+
+	.title img {
+		float: left;
+		margin-left: 2em;
+	}
+
+	.title h3, .title h4 {
+		margin-left: 150px;
+	}
+
+	.title h3 {
+		margin-top: 1em;
+	}
+
+	.charity {
+		clear: both;
+	}
+
+	.donate {
+		display: inline-block;
+		margin: auto;
+		padding: 5px;
+		background: rgb(25,25,25);
+		color: white;
+		border-radius: 5px;
+	}
+}
+
+/* tablet version */
+@media (min-width: 668px) {
+	div {
+		padding: .25em 2em;
+	}
+
+	h1 {
+		margin-bottom: .25em;
+	}
+
+	p, address {
+		max-width: 40em;
+		margin: auto auto 1em auto;
+	}
+
+	.monthly {
+		overflow: hidden;
+	}
+
+	.title {
+		overflow: hidden;
+		margin: 1em auto -1.5em auto;
+		padding: 10px;
+	}
+
+	.title img {
+		float: left;
+		margin-top: -2em;
+	}
+
+	.title h2, .title h3, .title h4 {
+		margin: 0;
+		margin-left: 125px;
+		text-align: left;
+	}
+
+	.charity {
+		margin-left: 125px;
+	}
+
+	.donate {
+		font-size: 32px;
+		display: inline-block;
+		margin: auto;
+		padding: 10px;
+		background: rgb(25,25,25);
+		color: white;
+		border-radius: 5px;
+	}
+}
+
+/* standard screen size and up */
+@media (min-width: 980px) {
+	div {
+		padding: .25em 0;
+	}
+
+	h1 {
+		margin: 0 1em .25em 1em;
+	}
+	
+	.header .nav a {
+		font-size: 10pt;
+		margin-left: 4em;
+	}
+
+	.monthly {
+		max-width: 900px;
+		margin: auto;
+	}
+
+	.header {
+		width: 100%;
+	}
+}
+
+/* large screen version */
+@media (min-width: 1300px) {
+	.header h1 {
+		width: 1200px;
+		margin: 0 1em .25em 1em;
+	}
+}
