@@ -20,11 +20,11 @@ em, i {
 
 a:link, a:active, a:hover, a:visited {
 	text-decoration: none;
-	color: #AF0000;
+	color: #00a6d2;
 }
 
 a:active, a:hover {
-	color: #FF0000;
+	color: #02bfe7;
 	text-decoration: underline;
 }
 
