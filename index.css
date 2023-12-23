@@ -5,7 +5,7 @@ h1 {
 }
 
 h2 {
-	color: #0071bc;
+	color: #037CB5;
 	margin: 1em auto 0 auto;
 }
 
@@ -93,59 +93,6 @@ body {
 	background-color: #CF0000;
 }
 
-
-/* PROJECTS */
-#projects {
-	min-width: 100%;
-	margin: auto;
-	text-align: center;
-}
-
-#projects .desc {
-	margin-left: .25em;
-}
-
-#projects a:link, #projects a:visited {
-	color: #e31c3d;
-}
-
-#projects p {
-	margin: .5em auto;
-	text-align: left;
-	font-size: 12pt;
-}
-
-#projects .project {
-	display: inline-block;
-	margin: 10px;
-	padding-left: 0;
-	width: 175px;
-	height: 175px;
-	position: relative;
-
-	background-size: contain;
-}
-
-#projects .content {
-	text-align: left;
-	position: absolute;
-	bottom: 0;
-	padding: 10px;
-	margin-bottom: auto;
-	max-height: 155px;
-	max-width: 155px;
-	width: 100%;
-	overflow: auto;
-	background: #333;
-	background: rgba(0,0,0,.8);
-	color: #ddd;
-}
-
-#projects .project h3 {
-	font-size: 150%;
-	color: white;
-}
-
 @media (max-width: 980px) {
 	body > div:not(#wrapper) {
 		margin: 1em;
@@ -153,7 +100,7 @@ body {
 	
 	#wrapper {
 		padding: 1em 2em;
-		background-color: #046b99;
+		background-color: #037CB5;
 		color: white;
 	}
 
@@ -203,7 +150,7 @@ body {
 
 	#wrapper {
 		background-size: 100%;
-		background-color: #046b99;
+		background-color: #037CB5;
 		color: white;
 		overflow: hidden;
 		width: 100%;
