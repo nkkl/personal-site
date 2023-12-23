@@ -19,13 +19,15 @@ em, i {
 }
 
 a:link, a:active, a:hover, a:visited {
-	text-decoration: none;
-	color: #00a6d2;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: #037CB5;
 }
 
 a:active, a:hover {
-	color: #02bfe7;
+	color: #037CB5;
 	text-decoration: underline;
+	text-decoration-style: solid;
 }
 
 /* custom font settings */
